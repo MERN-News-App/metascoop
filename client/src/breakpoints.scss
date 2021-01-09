@@ -1,0 +1,29 @@
+$phone: max-width 599px;
+$tablet-portrait: min-width 600px;
+$tablet-portrait-only: min-width 600px and max-width 899px;
+$tablet-landscape: min-width 900px;
+$tablet-landscape-only: min-width 900px and max-width 1199px;
+$desktop: min-width 1200px;
+$desktop-only: min-width 1200px and max-width 1799px;
+$ultrawide: min-width 1800px;
+
+
+
+@mixin phone {
+    @media (max-width: #{$phone}) {
+        @content;
+    }
+}
+
+
+@mixin tablet-portrait {
+    @media (max-width: #{$tablet-portrait}) {
+        @content;
+    }
+}
+
+@mixin tablet-portrait-only {
+    @media (max-width: #{$tablet-portrait}) {
+        @content;
+    }
+}
