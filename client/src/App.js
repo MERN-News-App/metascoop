@@ -1,5 +1,6 @@
-import React from "react";
-import "./styles.scss";
+// eslint-disable-next-line
+import React, { useEffect } from 'react';
+// import { useDispatch } from 'react-redux';
 import Router from "./route/routes";
 import Routes from "./route/routes";
 

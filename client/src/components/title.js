@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles.scss"
+import "./title.scss"
 
 const Title = () => {
   return <h1 className="Title">Homepage</h1>;
