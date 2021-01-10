@@ -1,0 +1,20 @@
+.outerContainer{
+    display: flex;
+    flex-direction: row;
+
+    border-style: solid;
+    border-color: red;
+    height: 30vh;
+    margin: 0px 10% 0px;
+}
+.innerContainerLeft{
+    border-style: dashed;
+    height: 50%;
+    width: 80%;   
+}
+
+.innerContainerRight{
+    border-style: dashed;
+    height: 50%;
+    width: 20%;   
+}

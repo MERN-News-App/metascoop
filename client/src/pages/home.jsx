@@ -1,6 +1,7 @@
 import React from "react";
 import MenuBar from '../components/menuBar.jsx'
 import Header from "../components/header.jsx" 
+import Content from "../components/content.jsx"
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <MenuBar />
       <Header />
+      <Content />
     </div>
   );
 }
