@@ -10,6 +10,9 @@ const Home = () => {
       <MenuBar />
       <Header />
       <Content />
+      <Content />
+      <Content />
+      <Content />
     </div>
   );
 }

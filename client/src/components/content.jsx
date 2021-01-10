@@ -1,11 +1,11 @@
 import React from 'react'
 import './content.scoped.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
+import { faPlusCircle, faFolderOpen } from '@fortawesome/free-solid-svg-icons'
 
 const Content = () => {
   return(
-      <div className="outerContainer">
+      <div className="outerContainer">  
           <div className="innerContainerLeft">
             <div className="title">Lakers' new starter becomes their new star, helping LeBron James hold off the Bulls</div>
             </div>
@@ -16,6 +16,10 @@ const Content = () => {
           <span className="icon">
                     <FontAwesomeIcon icon={faPlusCircle} size="3x" className="plus" />
                 </span>
+                <span className="icon">
+                    <FontAwesomeIcon icon={faFolderOpen} size="3x" className="plus" />
+                </span>
+                <span className="sum">SUM</span>
           </div>
       </div>
   )
