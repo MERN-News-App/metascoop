@@ -1,20 +1,34 @@
 .outerContainer{
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
+
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: auto 20%;
+   
 
     border-style: solid;
     border-color: red;
-    height: 30vh;
-    margin: 0px 10% 0px;
+    height: 20vh;
+    margin: 0px 13% 0px;
 }
 .innerContainerLeft{
     border-style: dashed;
-    height: 50%;
-    width: 80%;   
+    height: 100%;
+    // width: 80%;   
+    background-color:brown;
+}
+
+.innerContainerLeftUnder{
+    border-style: dashed;
+    color:blue;
+    height: 100%;
+    // width: 80%;   
+    background-color: cadetblue;
 }
 
 .innerContainerRight{
     border-style: dashed;
-    height: 50%;
-    width: 20%;   
+    height: 100%;
+    // width: 20%;   
 }

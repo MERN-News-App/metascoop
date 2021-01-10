@@ -6,6 +6,7 @@ const Content = () => {
       <div className="outerContainer">
           <div className="innerContainerLeft"></div>
           <div className="innerContainerRight"></div>
+          <div className="innerContainerLeftUnder"></div>
       </div>
   )
 }
