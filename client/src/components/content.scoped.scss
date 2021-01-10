@@ -17,7 +17,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .innerContainerLeft{
-    // border-style: dashed;
+    border-style: dashed;
     height: 100%;
     // width: 80%;   
     // background-color:brown;
@@ -33,7 +33,7 @@
 
 
 .innerContainerLeftUnder{
-    // border-style: dashed;
+    border-style: dashed;
     color:blue;
     height: 100%;
     // width: 80%;   
@@ -42,7 +42,7 @@
     
 }
 .plus{
-    // border-style: solid;
+    border-style: solid;
     padding-left: 2px;
     padding-bottom: 0px;
     height: 100%;
@@ -60,4 +60,9 @@
     width: 100%;
 }
 
+
+.sum{
+    border-style: solid;
+    border-color: blueviolet;
+}
 
