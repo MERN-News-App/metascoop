@@ -1,4 +1,17 @@
 .outerContainer{
+    padding: 0px 5vw 0px;
+
     border-style: dashed;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    max-width: 100%;
+    height: 30vh;
+}
+
+.item{
+    // max-width: 30%;
+    flex-grow: 1;
+    border-style: dashed;
 }
