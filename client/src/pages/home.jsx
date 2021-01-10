@@ -1,13 +1,13 @@
 import React from "react";
-import Title from "../components/title";
 import MenuBar from '../components/menuBar.jsx'
+import Header from "../components/header.jsx" 
 
 
 const Home = () => {
   return (
     <div>
       <MenuBar />
-      {/* <Title /> */}
+      <Header />
     </div>
   );
 }

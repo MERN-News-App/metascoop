@@ -5,7 +5,7 @@ import { faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 
 // import { Nav, Dropdown } from 'rsuite';
 import 'rsuite/dist/styles/rsuite-default.css';
-import './menuBar.scooped.scss'
+import './menuBar.scoped.scss'
 import '../../public/LOGOFINAL.svg'
 
 const MenuBar = () => {
