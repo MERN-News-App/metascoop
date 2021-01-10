@@ -5,13 +5,13 @@ const Header = () => {
   return(
       <div className="outerContainer">
           <div className="item">
-              {/* <img src="latest-newsO.jpg" alt=""/> */}
+              <img src="latest-newsO.jpg" alt="" className="image"/>
           </div>
           <div className="item">
-              {/* <img src="publicationsO.jpg" alt=""/> */}
+              <img src="publicationsO.jpg" alt="" className="image"/>
           </div>
           <div className="item">
-              {/* <img src="categoriesO.jpg" alt=""/> */}
+              <img src="categoriesO.jpg" alt="" className="image"/>
           </div>   
       </div>
   )
