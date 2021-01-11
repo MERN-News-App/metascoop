@@ -44,13 +44,22 @@
       border-radius: 8px;
   }
 
-  .title{
-    // border-style: dashed;
+  .tdiv{
+      border-style: dashed;
     border-color: chocolate;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
+  }
+
+  .title{
+    // border-style: dashed;
+    // border-color: chocolate;
+    // grid-column-start: 1;
+    // grid-column-end: 5;
+    // grid-row-start: 1;
+    // grid-row-end: 4;
 
     font-size: 1.8rem;
     font-weight: 600;
@@ -58,4 +67,8 @@
     margin-left: 10px;
     margin-top: -5px;
 
+  }
+
+  .cats{
+      padding-left: 10px;
   }
