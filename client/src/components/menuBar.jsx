@@ -5,14 +5,11 @@ import 'rsuite/dist/styles/rsuite-default.css';
 import './menuBar.scoped.scss'
 import '../../public/LOGOFINAL.svg'
 import SIDE from './sidebar.jsx'
-
 import SearchBar from './searchbar.jsx'
 
 
-
-
-  
   const MenuBar = () => {
+
       const [hover, setHover] = useState("metascoop")
       const [sidebarOpen, onSetSidebarOpen] = useState(false)
       
@@ -32,7 +29,7 @@ import SearchBar from './searchbar.jsx'
             </div>
             <div className="innerMiddle">
                 <div className="searchbar">
-                 <SearchBar />
+                 <SearchBar />   
                 </div>
             </div>
             <div className="innerRight">
