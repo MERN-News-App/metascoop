@@ -54,18 +54,13 @@
   }
 
   .title{
-    // border-style: dashed;
-    // border-color: chocolate;
-    // grid-column-start: 1;
-    // grid-column-end: 5;
-    // grid-row-start: 1;
-    // grid-row-end: 4;
 
+    line-height: 1.2;
     font-size: 1.8rem;
     font-weight: 600;
 
     margin-left: 10px;
-    margin-top: -5px;
+    margin-top: 0px;
 
   }
 
@@ -75,5 +70,8 @@
     margin-left: 30px;
     line-height: 23px;
     padding: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 12px;
     //   background-color: blue;
   }
