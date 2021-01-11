@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusCircle, faFolderOpen } from '@fortawesome/free-solid-svg-icons'
+import { faPlusCircle, faFolderOpen, faFolder } from '@fortawesome/free-solid-svg-icons'
 import './contentCard.scoped.scss'
 
 const title = "Lakers' new starter becomes their new star, helping LeBron James hold off the Bulls"
@@ -21,7 +21,8 @@ const ContentCard = () => {
         <div className="urlDiv">{url}</div>
         <div className="iconDiv">
           <div className="plus"><span className="icon"><FontAwesomeIcon icon={faPlusCircle} /></span></div>
-          <div className="folder"><span className="icon"><FontAwesomeIcon icon={faFolderOpen} /> SUM </span></div>
+          <div className="push"><button className="sum">SUM</button></div>
+          <div className="folder"><span className="icon"><FontAwesomeIcon icon={faFolder} /></span></div>
         </div>
       </div>
     </div>

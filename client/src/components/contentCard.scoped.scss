@@ -98,7 +98,7 @@
       grid-column-end: 5;
 
       display: grid;
-      grid-template-columns: 80% 20%;
+      grid-template-columns: 82% 10% 13%;
   }
 
   .plus{
@@ -115,6 +115,28 @@
   }
 
   .folder{
-      border-style: dashed;
-    margin-top: -5px;
+    //   border-style: dashed;
+    margin-top: -6px;
+  }
+
+  .push{
+    //   margin-bottom: 15px;  
+    display: flex;
+    // border-style: dashed;
+    justify-content: center;
+  }
+  .sum{
+    display: inline-flex;
+  align-items: center; 
+  height: 22px;
+    font-weight: 730;
+    font-size: 0.7rem;
+    line-height: 10px;
+    padding-top: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 12px;
+    margin-top: -3px;
+    letter-spacing: 0.1rem;
+    // height: 10px;
   }
