@@ -4,6 +4,7 @@ import { faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 import 'rsuite/dist/styles/rsuite-default.css';
 import './menuBar.scoped.scss'
 import '../../public/LOGOFINAL.svg'
+import SIDE from './sidebar.jsx'
 // import { AutoComplete, InputGroup, Icon } from 'rsuite';
 
 import SearchBar from './searchbar.jsx'
@@ -47,13 +48,20 @@ const styles = {
         "lol"
       }
 
+      const [sidebarOpen, onSetSidebarOpen] = useState(true)
+
+      const MousClick = (open) => {
+        onSetSidebarOpen({ sidebar: open})
+        }
     
 
     return (
+    <div>
+        <SIDE sidebarOpen={sidebarOpen} onSetSidebarOpen={onSetSidebarOpen}/>
         <div className="outerContainer">
             <div className="innerLeft">
                 <img src="LOGOFINAL.svg" alt="Kiwi standing on oval" className="logo" />
-                <h1 className={hover} onMouseEnter={collor} onMouseLeave={exit} onMouseDown={handleDrawerOpen}> METASCOOP</h1>
+                <h1 className={hover} onMouseEnter={collor} onMouseLeave={exit} onMouseDown={MousClick}> METASCOOP</h1>
             </div>
             <div className="innerMiddle">
                 <div className="searchbar">
@@ -68,6 +76,7 @@ const styles = {
                 </span>
             </div>
         </div>
+    </div>
     )
 }
 
