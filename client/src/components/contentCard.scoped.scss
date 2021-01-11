@@ -88,3 +88,31 @@
 
       margin-left: 10px
   }
+
+  .iconDiv{
+      border-style: dashed;
+      border-color: green;
+
+      grid-row-start: 5;
+      grid-column-start: 1;
+      grid-column-end: 5;
+
+      display: grid;
+      grid-template-columns: 80% 20%;
+  }
+
+  .plus{
+
+    // border-style: dashed;
+    //   max-width:  110%;
+      padding-left: 10px;
+      margin-top: -5px;
+  }
+
+  .icon{
+      font-size: 1.3rem;
+  }
+
+  .folder{
+    
+  }
