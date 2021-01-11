@@ -2,17 +2,26 @@ import React from "react";
 import MenuBar from '../components/menuBar.jsx'
 import Header from "../components/header.jsx" 
 import Content from "../components/content.jsx"
-
+import ContentCard from '../components/contentCard.jsx'
 
 const Home = () => {
   return (
     <div>
+     
       <MenuBar />
       <Header />
-      <Content />
-      <Content />
-      <Content />
-      <Content />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      
     </div>
   );
 }
