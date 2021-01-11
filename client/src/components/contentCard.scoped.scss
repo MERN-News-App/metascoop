@@ -1,5 +1,46 @@
+.wrapper{
+    margin-top: 30vh;
+    width: 100%;
+    border-style: dashed;
+    border-color: chartreuse;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .outerContainer{
     border-style: dashed;
     color: blue;
-    height: 500px;
+    width: 75%;
+    height: 130px;
+    display: flex;
+
+    
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
 }
+
+@media screen and (max-width: 600px) {
+    .outerContainer {
+     width: 100%;
+    }
+  }
+
+  .hello{
+      border-style: dashed;
+      border-color: chocolate;
+      grid-column-start: 5;
+      grid-row-start: 1;
+      grid-row-end: 6;
+  }
+
+  .title{
+    border-style: dashed;
+    border-color: chocolate;
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 6;
+  }
