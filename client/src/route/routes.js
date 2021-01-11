@@ -8,6 +8,7 @@ import LoginPage from "../pages/loginPage"
 import SigninPage from "../pages/signinPage"
 
 import MenuBar from '../components/menuBar.jsx'
+import ContentCard from '../components/contentCard.jsx'
 
 
 export default function Routes() {
@@ -18,7 +19,10 @@ export default function Routes() {
       <Route exact path="/categories" exact component={CategoriesPage} />
       <Route exact path="/publications" exact component={PublicationsPage} />
       <Route exact path="/signin" exact component={SigninPage} />
+
+      {/* for checking out components */}
       <Route exact path="/menubar" exact component={MenuBar} />
+      <Route exact path="/contentCard" exact component={ContentCard} />
       </Switch>
     </Router>
   );
