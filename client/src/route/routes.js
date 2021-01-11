@@ -7,6 +7,8 @@ import PublicationsPage from "../pages/publicationsPage"
 import LoginPage from "../pages/loginPage"
 import SigninPage from "../pages/signinPage"
 
+import MenuBar from '../components/menuBar.jsx'
+
 
 export default function Routes() {
   return (
@@ -16,6 +18,7 @@ export default function Routes() {
       <Route exact path="/categories" exact component={CategoriesPage} />
       <Route exact path="/publications" exact component={PublicationsPage} />
       <Route exact path="/signin" exact component={SigninPage} />
+      <Route exact path="/menubar" exact component={MenuBar} />
       </Switch>
     </Router>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 import 'rsuite/dist/styles/rsuite-default.css';
@@ -7,6 +7,8 @@ import '../../public/LOGOFINAL.svg'
 // import { AutoComplete, InputGroup, Icon } from 'rsuite';
 
 import SearchBar from './searchbar.jsx'
+import { colors } from '@material-ui/core';
+import { blue } from '@material-ui/core/colors';
 
 
 const styles = {
@@ -22,16 +24,36 @@ const styles = {
     'HYPER Ad Serving',
     'HYPER Data Discovery'
   ];
+  
 
+  
+  
+  
+  
+  // import { Nav, Dropdown } from 'rsuite';
+  
+  const MenuBar = () => {
+      const [hover, setHover] = useState("metascoop")
+      
+      const collor = () => {
+        setHover('metascoopHover')
+      }
 
-// import { Nav, Dropdown } from 'rsuite';
+      const exit = () => {
+        setHover('metascoop')
+      }
 
-const MenuBar = () => {
+      const handleDrawerOpen = () => {
+        "lol"
+      }
+
+    
+
     return (
         <div className="outerContainer">
             <div className="innerLeft">
                 <img src="LOGOFINAL.svg" alt="Kiwi standing on oval" className="logo" />
-                <h1 className="metascoop">METASCOOP</h1>
+                <h1 className={hover} onMouseEnter={collor} onMouseLeave={exit} onMouseDown={handleDrawerOpen}> METASCOOP</h1>
             </div>
             <div className="innerMiddle">
                 <div className="searchbar">

@@ -8,9 +8,10 @@ import SearchIcon from '@material-ui/icons/Search';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: '4px 4px',
+    padding: '3px 5px',
     display: 'flex',
     alignItems: 'center',
+    // height: 90%
     
   },
   input: {
@@ -25,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 4,
   },
   resize:{
-    fontSize:50
+    fontSize:20
   },
 }));
 
@@ -38,7 +39,7 @@ export default function SearchBar() {
       <InputBase
         className={classes.input}
         placeholder="Search"
-        inputProps={{ 'aria-label': 'search google maps' , },{style: {fontSize: 40}}}
+        inputProps={{ 'aria-label': 'search google maps' , },{style: {fontSize: 30}}}
         fullWidth
       />
       <IconButton type="submit" className={classes.iconButton} aria-label="search">
