@@ -45,7 +45,7 @@
   }
 
   .tdiv{
-      border-style: dashed;
+    //   border-style: dashed;
     border-color: chocolate;
     grid-column-start: 1;
     grid-column-end: 5;
@@ -74,4 +74,17 @@
     padding-right: 7px;
     border-radius: 12px;
     //   background-color: blue;
+  }
+
+
+  .urlDiv{
+    //   border-style: dashed;
+      border-color: blueviolet;
+
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+
+      margin-left: 10px
   }
