@@ -65,7 +65,7 @@
   }
 
   .cats{
-
+   
     font-size: 1rem;
     margin-left: 30px;
     line-height: 23px;
@@ -90,7 +90,7 @@
   }
 
   .iconDiv{
-      border-style: dashed;
+    //   border-style: dashed;
       border-color: green;
 
       grid-row-start: 5;
@@ -111,8 +111,10 @@
 
   .icon{
       font-size: 1.3rem;
+      color: blueviolet;
   }
 
   .folder{
-    
+      border-style: dashed;
+    margin-top: -5px;
   }

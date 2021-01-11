@@ -21,7 +21,7 @@ const ContentCard = () => {
         <div className="urlDiv">{url}</div>
         <div className="iconDiv">
           <div className="plus"><span className="icon"><FontAwesomeIcon icon={faPlusCircle} /></span></div>
-          <div className="folder"><span className="icon"><FontAwesomeIcon icon={faFolderOpen} /></span></div>
+          <div className="folder"><span className="icon"><FontAwesomeIcon icon={faFolderOpen} /> SUM </span></div>
         </div>
       </div>
     </div>
