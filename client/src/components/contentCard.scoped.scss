@@ -1,18 +1,22 @@
 .wrapper{
-    margin-top: 30vh;
+    // margin-top: 30vh;
     width: 100%;
-    border-style: dashed;
+    // border-style: dashed;
     border-color: chartreuse;
     justify-content: center;
     align-items: center;
     display: flex;
+    padding-bottom: 30px;
 }
 
 .outerContainer{
     border-style: solid;
+    border-width: 1px;
     width: 75%;
     height: 130px;
     display: flex;
+    border-radius: 8px;
+    
 
     
 
@@ -127,8 +131,8 @@
   }
   .sum{
     display: inline-flex;
-  align-items: center; 
-  height: 22px;
+    align-items: center; 
+    height: 22px;
     font-weight: 730;
     font-size: 0.7rem;
     line-height: 10px;
