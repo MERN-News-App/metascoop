@@ -9,8 +9,7 @@
 }
 
 .outerContainer{
-    border-style: dashed;
-    color: blue;
+    border-style: solid;
     width: 75%;
     height: 130px;
     display: flex;
@@ -46,13 +45,17 @@
   }
 
   .title{
-    border-style: dashed;
+    // border-style: dashed;
     border-color: chocolate;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 6;
+    grid-row-end: 4;
 
+    font-size: 1.8rem;
+    font-weight: 600;
 
+    margin-left: 10px;
+    margin-top: -5px;
 
   }
