@@ -1,58 +1,25 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 import 'rsuite/dist/styles/rsuite-default.css';
 import './menuBar.scoped.scss'
 import '../../public/LOGOFINAL.svg'
 import SIDE from './sidebar.jsx'
-// import { AutoComplete, InputGroup, Icon } from 'rsuite';
 
 import SearchBar from './searchbar.jsx'
-import { colors } from '@material-ui/core';
-import { blue } from '@material-ui/core/colors';
 
 
-const styles = {
-    width: 100,
-    marginBottom: 10
-  };
-  
-  const data = [
-    'HYPER Advertiser',
-    'HYPER Web Analytics',
-    'HYPER Video Analytics',
-    'HYPER DMP',
-    'HYPER Ad Serving',
-    'HYPER Data Discovery'
-  ];
-  
 
-  
-  
-  
-  
-  // import { Nav, Dropdown } from 'rsuite';
+
   
   const MenuBar = () => {
       const [hover, setHover] = useState("metascoop")
+      const [sidebarOpen, onSetSidebarOpen] = useState(false)
       
-      const collor = () => {
-        setHover('metascoopHover')
-      }
+      const collor = () => {setHover('metascoopHover')}
+      const exit = () => {setHover('metascoop')}
 
-      const exit = () => {
-        setHover('metascoop')
-      }
-
-      const handleDrawerOpen = () => {
-        "lol"
-      }
-
-      const [sidebarOpen, onSetSidebarOpen] = useState(true)
-
-      const MousClick = (open) => {
-        onSetSidebarOpen({ sidebar: open})
-        }
+      const MouseClick = (open) => {onSetSidebarOpen({ sidebar: open})}
     
 
     return (
@@ -61,7 +28,7 @@ const styles = {
         <div className="outerContainer">
             <div className="innerLeft">
                 <img src="LOGOFINAL.svg" alt="Kiwi standing on oval" className="logo" />
-                <h1 className={hover} onMouseEnter={collor} onMouseLeave={exit} onMouseDown={MousClick}> METASCOOP</h1>
+                <h1 className={hover} onMouseEnter={collor} onMouseLeave={exit} onMouseDown={MouseClick}> METASCOOP</h1>
             </div>
             <div className="innerMiddle">
                 <div className="searchbar">
