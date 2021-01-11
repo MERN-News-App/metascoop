@@ -1,5 +1,5 @@
 import React from 'react'
-import './sideBarContent.scss'
+import './sideBarContent.scoped.scss'
 
 const SideBarContent = () => {
   return(
