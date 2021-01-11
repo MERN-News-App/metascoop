@@ -1,21 +1,30 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Sidebar from "react-sidebar";
- 
+import SideBarContent from './sideBarContent.jsx'
 
-const SIDE = ({sidebarOpen, onSetSidebarOpen}) => {
+
+
+
+const styles = { 
+    sidebar: { 
+        background: "white" 
+    } 
+}
+
+const SIDE = ({ sidebarOpen, onSetSidebarOpen }) => {
 
     const MousClick = (open) => {
-    onSetSidebarOpen({ sidebar: open})
+        onSetSidebarOpen({ sidebar: open })
     }
 
     return (
         <Sidebar
-        sidebar={<b>Sidebar content</b>}
-        open={sidebarOpen}
-        onSetOpen={onSetSidebarOpen}
-        styles={{ sidebar: { background: "white" } }}>
-    </Sidebar> 
+            sidebar={<SideBarContent/>}
+            open={sidebarOpen}
+            onSetOpen={onSetSidebarOpen}
+            styles={styles}>
+        </Sidebar>
     )
-    }
+}
 
 export default SIDE
