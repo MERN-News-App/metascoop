@@ -55,6 +55,7 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
+    margin-right: 100px;
   }
 
   .title{
@@ -68,14 +69,18 @@
 
   }
 
+
+  .catDiv{
+    padding-left: 20px;
+  }
   .cats{
    
     font-size: 1rem;
-    margin-left: 30px;
+    // margin-left: 30px;
     line-height: 23px;
     padding: 0px;
     padding-left: 7px;
-    padding-right: 7px;
+    padding-right: 8px;
     border-radius: 12px;
     //   background-color: blue;
   }
