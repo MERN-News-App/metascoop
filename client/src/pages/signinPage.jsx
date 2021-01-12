@@ -1,13 +1,13 @@
 import React from 'react'
 import MenuBar from '../components/menuBar.jsx'
-import Signin from '../components/signin.jsx'
+import Signup from '../components/signup.jsx'
 
-const SigninPage = () => {
+const SignupPage = () => {
   return(
     <div>
       <MenuBar />
-      <Signin />
+      <Signup />
     </div>
   )
 }
-export default SigninPage
+export default SignupPage
