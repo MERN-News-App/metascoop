@@ -10,6 +10,7 @@ import LatestNews from "../pages/latestPage"
 
 import MenuBar from '../components/menuBar.jsx'
 import ContentCard from '../components/contentCard.jsx'
+import NewsApi from '../components/apiCall.jsx'
 
 
 export default function Routes() {
@@ -21,6 +22,8 @@ export default function Routes() {
       <Route exact path="/publications" exact component={PublicationsPage} />
       <Route exact path="/signin" exact component={SigninPage} />
       <Route exact path="/latest-news" exact component={LatestNews} />
+      <Route exact path="/newsApi" exact component={NewsApi} />
+      
 
       {/* for checking out components */}
       <Route exact path="/menubar" exact component={MenuBar} />

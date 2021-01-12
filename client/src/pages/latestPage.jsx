@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MenuBar from '../components/menuBar.jsx'
 import Title from '../components/title.jsx' 
 import ContentCard from '../components/contentCard.jsx'
@@ -415,6 +415,8 @@ const data =
 const LatestNews = () => {
     const [title, setTitle] = useState("Latest News")
     const [articles, setArticles] = useState(data)
+
+    
 
   return (
     <div>
