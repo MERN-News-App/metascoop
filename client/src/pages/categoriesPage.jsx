@@ -1,8 +1,6 @@
 import React from "react";
-import MenuBar from '../components/menuBar.jsx'
-import Categories from '../components/categories.jsx'
-
-
+import MenuBar from "../components/menuBar.jsx";
+import Categories from "../components/categories.jsx";
 
 const CategoriesPage = () => {
   return (
@@ -11,6 +9,6 @@ const CategoriesPage = () => {
       <Categories />
     </div>
   );
-}
+};
 
-export default CategoriesPage
+export default CategoriesPage;
