@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import MenuBar from '../components/menuBar.jsx'
 import Title from '../components/title.jsx' 
 import ContentCard from '../components/contentCard.jsx'
+import axios from 'axios'
 
-const data = 
+const dummy = 
 {
     "status": "ok",
     "news": [
@@ -412,15 +413,35 @@ const data =
     "page": 1
 }
 
+
+
 const LatestNews = () => {
     const [title, setTitle] = useState("Latest News")
-    const [articles, setArticles] = useState(data)
+    const [articles, setArticles] = useState({})
+
+    function fetchNews(){
+        console.log("begin fetch")
+        axios.get('https://api.currentsapi.services/v1/latest-news/?&&page_number=1&apiKey=pLe7rH90EDy1ZfcnxREvmUPPJ1Kh6fznQ_0v3VtIBngz1Fs0')
+        .then(res => {
+            console.log("RESPONSE", res)
+            return res
+        })
+            .catch(err =>{
+                console.log("Error", err )
+            })
+    }
+
+    useEffect(() => {
+        fetchNews().then((data) => {
+          setArticles(data)
+          console.log("hello2", data)
+        })
+    }, [])
 
     
 
   return (
     <div>
-     
       <MenuBar />
       <Title title={title}/>
       <ContentCard articles={articles}/>
