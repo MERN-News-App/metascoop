@@ -18,5 +18,3 @@ const categories = [
     "game"
 ]
 
-
-export default categories
