@@ -3,10 +3,13 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import Home from "../pages/home";
 import CategoriesPage from "../pages/categoriesPage"
+import CategoryPage from '../pages/category/categoryPage'
 import PublicationsPage from "../pages/publicationsPage"
 import LoginPage from "../pages/loginPage"
 import SigninPage from "../pages/signinPage"
 import LatestNews from "../pages/latestPage"
+
+import categories from './categoryRoute'
 
 import MenuBar from '../components/menuBar.jsx'
 import ContentCard from '../components/contentCard.jsx'
@@ -23,6 +26,10 @@ export default function Routes() {
       <Route exact path="/signin" exact component={SigninPage} />
       <Route exact path="/latest-news" exact component={LatestNews} />
       <Route exact path="/newsApi" exact component={NewsApi} />
+      {categories.map((cat) =>(
+          <Route exact path={`/${cat}`} exact component={CategoryPage} category={cat}/>
+      ))}
+      
       
 
       {/* for checking out components */}
