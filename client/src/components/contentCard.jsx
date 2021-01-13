@@ -11,11 +11,13 @@ const ContentCard = ({ articles }) => {
 
   // console.log(news.news[1].title)
 
-
+console.log("HELLO", articles)
 
   return (
+
+  
     <>
-      {articles.news.map((article) => (
+      { Object.keys( articles ).length > 0 && articles.map((article) => (
         <div className="wrapper">
           <div className="outerContainer">
             <div className="tdiv">
