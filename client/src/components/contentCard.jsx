@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faFolderOpen, faFolder } from '@fortawesome/free-solid-svg-icons'
 import './contentCard.scoped.scss'
 
-const title = "Lakers' new starter becomes their new star, helping LeBron James hold off the Bulls"
-const url = "https://www.latimes.com/sports/lakers/story/2021-01-08/lakers-hold-off-late-bulls-rally-for-the-win"
 
 
 const ContentCard = ({ apiURL }) => {
