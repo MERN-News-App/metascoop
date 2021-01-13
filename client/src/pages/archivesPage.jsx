@@ -1,12 +1,12 @@
 import React from "react";
 import MenuBar from "../components/menuBar.jsx";
-import Publications from "../components/publications.jsx";
+import Archives from "../components/archives.jsx";
 
 const CategoriesPage = () => {
   return (
     <div>
       <MenuBar />
-      <Publications />
+      <Archives />
     </div>
   );
 };
