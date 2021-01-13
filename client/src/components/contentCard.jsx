@@ -17,7 +17,7 @@ console.log("HELLO", articles)
 
   
     <>
-      { Object.keys( articles ).length > 0 && articles.news.map((article) => (
+      { Object.keys( articles ).length > 0 && articles.map((article) => (
         <div className="wrapper">
           <div className="outerContainer">
             <div className="tdiv">
