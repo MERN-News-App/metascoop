@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Sidebar from "react-sidebar";
 import SideBarContent from './sideBarContent.jsx'
 
@@ -7,15 +6,15 @@ import SideBarContent from './sideBarContent.jsx'
 
 const styles = { 
     sidebar: { 
-        background: "white" 
+        background: "white",
+        position: "fixed"
+
     } 
 }
 
 const SIDE = ({ sidebarOpen, onSetSidebarOpen }) => {
 
-    const MousClick = (open) => {
-        onSetSidebarOpen({ sidebar: open })
-    }
+    
 
     return (
         <Sidebar

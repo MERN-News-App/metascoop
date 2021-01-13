@@ -3,7 +3,11 @@ import './categories.scoped.scss'
 
 const Categories = () => {
   return(
-      <div>HTML HERE</div>
+      <div className="margin">
+        <button>health</button>
+        <button>food</button>
+        <button>game</button>
+      </div>
   )
 }
 

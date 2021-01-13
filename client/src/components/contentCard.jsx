@@ -1,33 +1,63 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faFolderOpen, faFolder } from '@fortawesome/free-solid-svg-icons'
 import './contentCard.scoped.scss'
 
-const title = "Lakers' new starter becomes their new star, helping LeBron James hold off the Bulls"
-const url = "https://www.latimes.com/sports/lakers/story/2021-01-08/lakers-hold-off-late-bulls-rally-for-the-win"
 
 
-const ContentCard = () => {
+const ContentCard = ({ apiURL }) => {
+  const [articles, setArticles] = useState({})
+
+
+  async function fetchNews(){
+    console.log(apiURL[0], "Fetch News Called")
+    let newsData;
+    let call = apiURL[0]
+    try{
+        newsData = await axios.get(call)
+        setArticles(newsData.data.news)
+    }
+    catch(error){
+        newsData = error
+    }
+    return newsData
+}
+
+
+
+  useEffect(() => {
+    fetchNews()
+  }, [])
+
+  console.log("HELLO", articles)
+
   return (
-    <div className="wrapper">
-      <div className="outerContainer">
-        <div className="tdiv">
-          <div className="title">{title}
-            <span><button className="cats">sports</button></span>
-            <span><button className="cats">finance</button></span>
+
+
+    <>
+      { Object.keys(articles).length > 0 && articles.map((article) => (
+        <div className="wrapper">
+          <div className="outerContainer">
+            <div className="tdiv">
+              <div className="title">{(article.title.length >= 115) ? `${article.title.substring(0, 115)}...` : article.title}
+                <span className="catDiv"></span>
+                {article.category.map((cats) => (
+                  <span><button className="cats">{cats}</button></span>
+                ))}
+              </div>
+            </div>
+            <img src={article.image} alt="" className="hello" />
+            <div className="urlDiv">{`${article.url.substring(0, 40)} ...`}</div>
+            <div className="iconDiv">
+              <div className="plus"><span className="icon"><FontAwesomeIcon icon={faPlusCircle} /></span></div>
+              <div className="push"><button className="sum">SUM</button></div>
+              <div className="folder"><span className="icon"><FontAwesomeIcon icon={faFolder} /></span></div>
+            </div>
           </div>
         </div>
-        <img src="https://ca-times.brightspotcdn.com/dims4/default/4506919/2147483647/strip/true/crop/4226x2377+0+220/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F98%2Fc5%2F2c7158b54a778ee3e9119cfe4517%2Fbulls-lakers-basketball-82900.jpg" alt="" className="hello" />
-        <div className="urlDiv">{url}</div>
-        <div className="iconDiv">
-          <div className="plus"><span className="icon"><FontAwesomeIcon icon={faPlusCircle} /></span></div>
-          <div className="push"><button className="sum">SUM</button></div>
-          <div className="folder"><span className="icon"><FontAwesomeIcon icon={faFolder} /></span></div>
-        </div>
-      </div>
-    </div>
-
-
+      ))}
+    </>
   )
 }
 
