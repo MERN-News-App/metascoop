@@ -8,17 +8,14 @@ import Avatar from "@material-ui/core/Avatar";
 import ImageIcon from "@material-ui/icons/Image";
 import WorkIcon from "@material-ui/icons/Work";
 import BeachAccessIcon from "@material-ui/icons/BeachAccess";
-import Grid from "@material-ui/core/Grid";
-// import { loadCSS } from "fg-loadcss";
-// import { green } from "@material-ui/core/colors";
-// import Icon from "@material-ui/core/Icon";
+
+import ArchivesButtons from "./archivesButtons.jsx";
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
     maxWidth: 500,
     backgroundColor: theme.palette.background.paper,
-    height: 100,
     marginTop: 100
   }
 }));
@@ -28,7 +25,6 @@ export default function Archives() {
 
   return (
     <div className="outerContainer">
-      <Grid container alignItems="stretch" />
       <List className={classes.root}>
         <ListItem>
           <ListItemAvatar>
@@ -79,6 +75,7 @@ export default function Archives() {
           <ListItemText primary="Archive holiday" secondary="July 20, 2014" />
         </ListItem>
       </List>
+      <ArchivesButtons />
     </div>
   );
 }

@@ -5,6 +5,9 @@ import Home from "../pages/home";
 import CategoriesPage from "../pages/categoriesPage";
 import PublicationsPage from "../pages/publicationsPage";
 import LoginPage from "../pages/loginPage";
+
+// take notice of signup vs signin
+
 import SignUpPage from "../pages/signupPage";
 import ArchivesPage from "../pages/archivesPage";
 
