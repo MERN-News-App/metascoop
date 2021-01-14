@@ -8,8 +8,7 @@ import Title from "../../components/title.jsx"
 const CategoryPage = ({cats}) => {
 
     const URL = () => {
-        return `https://api.currentsapi.services/v1/search?category=${cats}&apiKey=pLe7rH90EDy1ZfcnxREvmUPPJ1Kh6fznQ_0v3VtIBngz1Fs0`
-        
+        return `https://api.currentsapi.services/v1/search?category=${cats}&apiKey=X2DqXEqyVN2kKq2QJPwiiZZ-xpRGdj7EEFCqpfDjv6CuX-fD` 
     } 
 
     const apiURL = useState(URL)

@@ -4,7 +4,7 @@ import './categories.scoped.scss'
 const Categories = () => {
   return(
       <div className="margin">
-        <button>health</button>
+        <button onClick={() => console.log("CLICK")} onMouseEnter={() => console.log("HOVER")}>health</button>
         <button>food</button>
         <button>game</button>
       </div>

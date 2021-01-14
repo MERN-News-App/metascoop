@@ -2,14 +2,21 @@ import Sidebar from "react-sidebar";
 import SideBarContent from './sideBarContent.jsx'
 
 
-
-
 const styles = { 
     sidebar: { 
-        background: "white",
-        position: "fixed"
-
-    } 
+        position: "fixed",
+        background: "white"
+    },
+    root: {
+        position: "undefined"
+    },
+    content: {
+        position: "undefined",
+        top: "undefined",
+        left: "undefined",
+        right: "undefined",
+        bottom: "undefined"
+    }
 }
 
 const SIDE = ({ sidebarOpen, onSetSidebarOpen }) => {
@@ -21,7 +28,9 @@ const SIDE = ({ sidebarOpen, onSetSidebarOpen }) => {
             sidebar={<SideBarContent/>}
             open={sidebarOpen}
             onSetOpen={onSetSidebarOpen}
-            styles={styles}>
+            styles={styles}
+            >
+                <></>
         </Sidebar>
     )
 }

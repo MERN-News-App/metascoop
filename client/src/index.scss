@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+#gatsby-focus-wrapper > div:nth-child(1){
+  height: 0;
+  width: 0;
+}
+
 
 
 
