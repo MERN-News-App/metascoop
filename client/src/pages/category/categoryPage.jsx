@@ -5,15 +5,15 @@ import Title from "../../components/title.jsx"
 
 
 
-const CategoryPage = ({cats}) => {
+const CategoryPage = ({ category }) => {
 
     const URL = () => {
-        return `https://api.currentsapi.services/v1/search?category=${cats}&apiKey=X2DqXEqyVN2kKq2QJPwiiZZ-xpRGdj7EEFCqpfDjv6CuX-fD` 
+        return `https://api.currentsapi.services/v1/search?category=${category}&apiKey=X2DqXEqyVN2kKq2QJPwiiZZ-xpRGdj7EEFCqpfDjv6CuX-fD` 
     } 
 
     const apiURL = useState(URL)
 
-    console.log("HELLO", cats)
+    console.log("HELLO", category)
     console.log("hello")
 
 
