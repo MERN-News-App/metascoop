@@ -42,8 +42,8 @@ const ContentCard = ({ apiURL }) => {
         // console.log(article.id)
       return (
       
-        <div className="wrapper" >
-          <div className="outerContainer" key={article.id.toString()}>
+        <div className="wrapper" key={article.id.toString()}>
+          <div className="outerContainer" >
             <div className="tdiv">
               <div className="title" >{(article.title.length >= 115) ? `${article.title.substring(0, 115)}...` : article.title}
                 <span className="catDiv"></span>
