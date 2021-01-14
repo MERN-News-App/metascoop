@@ -4,11 +4,11 @@ import Categories from '../components/categories.jsx'
 
 
 
-const CategoriesPage = () => {
+const CategoriesPage = ({ category }) => {
   return (
     <div>
       <MenuBar />
-      <Categories />
+      <Categories category={ category }/>
     </div>
   );
 }

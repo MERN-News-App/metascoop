@@ -30,8 +30,11 @@ const Router = () => {
         <Route exact path="/newsApi" component={NewsApi} />
 
         <Route exact path="/categories" component={CategoriesPage} />
+
         {categories.map((category) => {
-          <Route exact path={`/${category}`} exact component={CategoryPage} category={category} />
+          <Route exact path={`/${category}`}>
+            <CategoryPage category={category}/>
+            </Route>
         })}
 
 
