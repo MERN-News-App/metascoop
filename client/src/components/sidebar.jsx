@@ -22,6 +22,7 @@ const SIDE = ({ sidebarOpen, onSetSidebarOpen }) => {
             open={sidebarOpen}
             onSetOpen={onSetSidebarOpen}
             styles={styles}>
+                <></>
         </Sidebar>
     )
 }

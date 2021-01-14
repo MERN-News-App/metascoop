@@ -16,7 +16,7 @@ import SearchBar from './searchbar.jsx'
       const collor = () => {setHover('metascoopHover')}
       const exit = () => {setHover('metascoop')}
 
-      const MouseClick = (open) => {onSetSidebarOpen({ sidebar: open})}
+      const MouseClick = (open) => {onSetSidebarOpen(true)}
     
 
     return (

@@ -5,7 +5,7 @@ import ContentCard from '../components/contentCard.jsx'
 
 
 const LatestNews = () => {
-    const title = useState("Latest News")
+    const [title] = useState("Latest News")
     const apiURL = useState('https://api.currentsapi.services/v1/latest-news/?&&page_number=1&apiKey=pLe7rH90EDy1ZfcnxREvmUPPJ1Kh6fznQ_0v3VtIBngz1Fs0')
   
   return (
