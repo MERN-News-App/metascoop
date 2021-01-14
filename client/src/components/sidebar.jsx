@@ -1,8 +1,5 @@
 import Sidebar from "react-sidebar";
 import SideBarContent from './sideBarContent.jsx'
-import './fix.scss'
-
-
 
 
 const styles = { 
