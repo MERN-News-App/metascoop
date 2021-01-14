@@ -5,45 +5,50 @@ import { faPlusCircle, faFolder } from '@fortawesome/free-solid-svg-icons'
 import './contentCard.scoped.scss'
 
 
-
 const ContentCard = ({ apiURL }) => {
+  
   const [articles, setArticles] = useState({})
-
-
+  
+  
   async function fetchNews(){
     console.log(apiURL[0], "Fetch News Called")
     let newsData;
     let call = apiURL[0]
     try{
-        newsData = await axios.get(call)
-        setArticles(newsData.data.news)
+      newsData = await axios.get(call)
+      setArticles(newsData.data.news)
     }
+    
     catch(error){
-        newsData = error
+      newsData = error
     }
     return newsData
-}
-
-
-
+  }
+  
+  
+  
   useEffect(() => {
     fetchNews()
   }, [])
-
+  
   console.log("HELLO", articles)
-
+  
   return (
 
 
     <>
-      { Object.keys(articles).length > 0 && articles.map((article) => (
-        <div className="wrapper" key={article.id}>
-          <div className="outerContainer">
+      { Object.keys(articles).length > 0 && articles.map((article) => {
+        //cannot fix waring for unique child id
+        // console.log(article.id)
+      return (
+      
+        <div className="wrapper" >
+          <div className="outerContainer" key={article.id.toString()}>
             <div className="tdiv">
               <div className="title" >{(article.title.length >= 115) ? `${article.title.substring(0, 115)}...` : article.title}
                 <span className="catDiv"></span>
                 {article.category.map((cats) => (
-                  <span><button className="cats" key={cats}>{cats}</button></span>
+                  <span key={cats}><button className="cats" >{cats}</button></span>
                 ))}
               </div>
             </div>
@@ -56,9 +61,12 @@ const ContentCard = ({ apiURL }) => {
             </div>
           </div>
         </div>
-      ))}
+      )
+
+      })}
     </>
   )
+ 
 }
 
 export default ContentCard
