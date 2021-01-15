@@ -31,7 +31,7 @@ const ContentCard = ({ apiURL }) => {
     fetchNews()
   }, [])
   
-  console.log("HELLO", articles)
+  console.log("CONTENT CARD", apiURL, articles)
   
   return (
 

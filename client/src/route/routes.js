@@ -32,8 +32,8 @@ const Router = () => {
 
         <Route exact path="/categories" component={CategoriesPage} />
         <Route exact path="/category" component={CategoryPage} />
-        
-        <Route exact path="/search" component={SearchPage} />
+
+        {/* <Route exact path="/search" component={SearchPage} /> */}
 
         {/* for checking out components */}
         <Route exact path="/menubar" component={MenuBar} />
