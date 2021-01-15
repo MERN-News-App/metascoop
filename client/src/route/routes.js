@@ -26,17 +26,14 @@ const Router = () => {
         <Route exact path="/publications" component={PublicationsPage} />
         <Route exact path="/signin" component={SigninPage} />
         <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/latest-news" component={LatestNews} />
         <Route exact path="/newsApi" component={NewsApi} />
 
+        <Route exact path="/latest-news" component={LatestNews} />
+
         <Route exact path="/categories" component={CategoriesPage} />
-
-        {categories.map((category) => {
-          <Route exact path={`/${category}`}>
-            <CategoryPage category={category}/>
-            </Route>
-        })}
-
+        <Route exact path="/category" component={CategoryPage} />
+        
+        <Route exact path="/search" component={SearchPage} />
 
         {/* for checking out components */}
         <Route exact path="/menubar" component={MenuBar} />

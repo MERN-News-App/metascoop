@@ -7,7 +7,7 @@ const Categories = () => {
     <div className="margin">
       <Link
         to={{
-          pathname: '/food'  
+          pathname: '/category'  
         }} >
       <button onClick={() => console.log("CLICK")} onMouseEnter={() => console.log("HOVER")}>FOOD</button>
         </Link>
