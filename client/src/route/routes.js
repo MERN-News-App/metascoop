@@ -5,7 +5,7 @@ import Home from "../pages/home";
 import CategoriesPage from "../pages/categoriesPage"
 import PublicationsPage from "../pages/publicationsPage"
 import LoginPage from "../pages/loginPage"
-import SigninPage from "../pages/signinPage"
+import SignUpPage from '../pages/signUpPage'
 import LatestNews from "../pages/latestPage"
 
 // import CategoryPage from '../pages/category/categoryPage'
@@ -26,7 +26,7 @@ const Router = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         
-        <Route exact path="/signin" component={SigninPage} />
+        <Route exact path="/signup" component={SignUpPage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/newsApi" component={NewsApi} />
 
