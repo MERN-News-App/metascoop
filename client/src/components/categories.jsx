@@ -1,39 +1,53 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './categories.scoped.scss'
 
-import {useDispatch} from 'react-redux'
-import {updateCategory} from '../actions/newsObjects'
+import { useDispatch } from 'react-redux'
+import { updateCategory } from '../actions/newsObjects'
 
 const Categories = () => {
   const [category, setCategory] = useState('')
   const dispatch = useDispatch()
 
-// USE DISPATCH HERE 
+  // USE DISPATCH HERE 
+
+  // useEffect(() => {
+  // }, [setCategory])
 
 
-const handleClick = (cat) => (e) => {
-  e.preventDefault();
-  setCategory(cat)
-  dispatch(updateCategory(category))
-}
+  // const handleClick = (cat) => (e) => {
+  //   setCategory(cat)
+  //   e.preventDefault();
+  //   dispatch(updateCategory(category))
+  // }
+
+  const handleClick = (e) => {
+    // setCategory(cat)
+    // e.preventDefault();
+    dispatch(updateCategory(category))
+  }
 
   return (
     <div className="margin">
       {/* FOOD */}
       <Link
         to={{
-          pathname: '/category'  
+          pathname: '/articlepage'
         }} >
-      <button onClick={handleClick('fooood')} onMouseEnter={() => console.log("HOVER")}>FOOD</button>
-        </Link>
-        {/* FINANCE */}
-        <Link
+        <button onClick={handleClick} onMouseEnter={() => {
+          console.log("HOVER")
+          setCategory('programming')
+          dispatch(updateCategory(category))
+          console.log(category)
+        }}>FOOD</button>
+      </Link>
+      {/* FINANCE */}
+      <Link
         to={{
-          pathname: '/category'  
+          pathname: '/category'
         }} >
-      <button onClick={() => console.log("CLICK")} onMouseEnter={() => console.log("HOVER")}>FINANCE</button>
-        </Link>
+        <button onClick={handleClick('finance')} onMouseEnter={() => console.log("HOVER")}>FINANCE</button>
+      </Link>
 
       <button>Publication</button>
       <button>Search</button>
