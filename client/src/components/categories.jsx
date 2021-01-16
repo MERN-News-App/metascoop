@@ -1,11 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './categories.scoped.scss'
 
+import {useDispatch} from 'react-redux'
+
 const Categories = () => {
+  const [category, setCategory] = useState('')
+  const dispatch = useDispatch()
 
 // USE DISPATCH HERE 
 
+
+function handleClick(e){
+  e.preventDefault();
+  setCategory('food')
+
+}
 
   return (
     <div className="margin">
