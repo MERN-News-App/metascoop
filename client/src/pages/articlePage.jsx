@@ -36,7 +36,9 @@ const apiURL = useState(URL)
   return (
     <div>
       <MenuBar />
+      {/* // OBJECT.title */}
       <Title category={category}/>
+      {/* OBJECT.apiURL */}
       <ContentCard2 apiURL={ apiURL }/>
     </div>
   );
