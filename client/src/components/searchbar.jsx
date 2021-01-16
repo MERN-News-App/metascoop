@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
+import { Link } from 'react-router-dom'
+
+import { useDispatch } from 'react-redux'
+import { updateSearch } from '../actions/newsObjects'
 
 
 
@@ -35,6 +39,29 @@ const useStyles = makeStyles((theme) => ({
 export default function SearchBar() {
   const classes = useStyles();
 
+  const [search, setSearch] = useState('')
+  const dispatch = useDispatch()
+
+  const debounce = (func, delay) => {
+    let debounceTimer;
+    return function () {
+        const context = this;
+        const args = arguments;
+        clearTimeout(debounceTimer);
+        debounceTimer =
+        setTimeout(() => func.apply(context, args), delay);
+    }
+}
+
+
+
+  const handleChange = (e) => {
+    e.preventDefault()
+    setSearch(e.target.value)
+    dispatch(updateSearch(search))
+    console.log(search)
+  }
+
   return (
     <Paper component="form" className={classes.root}>
      
@@ -43,10 +70,13 @@ export default function SearchBar() {
         placeholder="Search"
         inputProps={{ 'aria-label': 'search google maps' , },{style: {fontSize: 30}}}
         fullWidth
+        onChange={handleChange}
       />
+      <Link to={{pathname: '/search'}} >
       <IconButton type="submit" className={classes.iconButton} aria-label="search">
         <SearchIcon />
       </IconButton>
+      </Link>
     </Paper>
   );
 }

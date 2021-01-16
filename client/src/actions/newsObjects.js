@@ -34,6 +34,8 @@ export const updateSearch = (search) => (dispatch) => {
         apiURL: url
     }
 
+    console.log("from action")
+
     dispatch({ type: 'UPDATE_SEARCH', payload: data })
 }
 
