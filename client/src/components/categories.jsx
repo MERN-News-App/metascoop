@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './categories.scoped.scss'
 
 import {useDispatch} from 'react-redux'
+import {fetchCategory} from '../actions/newsObjects'
 
 const Categories = () => {
   const [category, setCategory] = useState('')
@@ -14,7 +15,7 @@ const Categories = () => {
 function handleClick(e){
   e.preventDefault();
   setCategory('food')
-
+  dispatch(fetchCategory(category))
 }
 
   return (
