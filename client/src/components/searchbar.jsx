@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
@@ -41,6 +41,8 @@ export default function SearchBar() {
 
   const [search, setSearch] = useState('')
   const dispatch = useDispatch()
+
+
 
   const debounce = (func, delay) => {
     let debounceTimer;
