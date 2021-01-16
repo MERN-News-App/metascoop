@@ -12,6 +12,8 @@ import './index.scss'
 
 const store = createStore(reducers, compose(applyMiddleware(thunk)))
 
+console.log(store.reducers, "HEEER I AM")
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
