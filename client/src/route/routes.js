@@ -25,7 +25,7 @@ const Router = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/publications" component={PublicationsPage} />
+        
         <Route exact path="/signin" component={SigninPage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/newsApi" component={NewsApi} />
@@ -33,6 +33,7 @@ const Router = () => {
         <Route exact path="/latest-news" component={LatestNews} />
 
         <Route exact path="/categories" component={CategoriesPage} />
+        <Route exact path="/publications" component={PublicationsPage} />
      
 
 

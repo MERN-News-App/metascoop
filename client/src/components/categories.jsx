@@ -32,7 +32,7 @@ const Categories = () => {
       <Link to={{pathname: '/topic'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('food')}>FOOD</button></Link>
       <Link to={{pathname: '/topic'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('programming')}>PROGRAMMING</button></Link>
 
-      <button>Publication</button>
+      <button>PublicationTEST</button>
       <button>Search</button>
     </div>
   )
