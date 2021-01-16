@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 
 
 
+
 import ContentCard2 from "../components/contentCard2.jsx";
 import MenuBar from '../components/menuBar.jsx';
 import Title from '../components/title.jsx'
@@ -14,8 +15,9 @@ import Title from '../components/title.jsx'
 
 const ArticlePage = () => {
 
+
 //USE SELECTOR HERE
-const newsObj = useSelector((state) => state.newsObject)
+const newsObj = useSelector((state) => state.newsObjects)
 console.log(newsObj, "YOOOOOOOOO")
 
 

@@ -1,9 +1,9 @@
 
-const def = { title: "science", apiURL:`https://api.currentsapi.services/v1/search?category=science&apiKey=X2DqXEqyVN2kKq2QJPwiiZZ-xpRGdj7EEFCqpfDjv6CuX-fD`}
+const initstate = { title: "science", apiURL:`https://api.currentsapi.services/v1/search?category=science&apiKey=X2DqXEqyVN2kKq2QJPwiiZZ-xpRGdj7EEFCqpfDjv6CuX-fD`}
 
 
 // eslint-disable-next-line
-export default (newsObject = def, action) => {
+export default (newsObject = initstate, action) => {
     switch (action.type) {
        case 'CATEGORY':
            return action.payload;
