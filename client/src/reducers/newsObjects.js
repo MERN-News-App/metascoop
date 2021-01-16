@@ -1,6 +1,8 @@
 
 const def = { title: "", apiURL:""}
 
+
+// eslint-disable-next-line
 export default (newsObject = def, action) => {
     switch (action.type) {
        case 'CATEGORY':
