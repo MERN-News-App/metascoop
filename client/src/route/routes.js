@@ -15,6 +15,8 @@ import MenuBar from '../components/menuBar.jsx'
 import ContentCard from '../components/contentCard.jsx'
 import NewsApi from '../components/apiCall.jsx'
 
+import ArticlePage from '../pages/articlePage.jsx'
+
 
 
 const Router = () => {
@@ -33,7 +35,12 @@ const Router = () => {
         <Route exact path="/categories" component={CategoriesPage} />
         <Route exact path="/category" component={CategoryPage} />
 
+
+        <Route exact path="/articlepage" component={ArticlePage} />
+
         {/* <Route exact path="/search" component={SearchPage} /> */}
+
+
 
         {/* for checking out components */}
         <Route exact path="/menubar" component={MenuBar} />
