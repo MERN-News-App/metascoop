@@ -26,3 +26,14 @@ export const updatePublication = (publication) => (dispatch) => {
     dispatch({ type: 'UPDATE_PUBLICATION', payload: data })
 }
 
+export const updateSearch = (search) => (dispatch) => {
+    const url = `https://api.currentsapi.services/v1/search?keywords=${search}&apiKey=pLe7rH90EDy1ZfcnxREvmUPPJ1Kh6fznQ_0v3VtIBngz1Fs0`
+
+    const data = {
+        title: search,
+        apiURL: url
+    }
+
+    dispatch({ type: 'UPDATE_SEARCH', payload: data })
+}
+
