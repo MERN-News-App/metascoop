@@ -12,9 +12,9 @@ const Categories = () => {
 // USE DISPATCH HERE 
 
 
-function handleClick(e){
+const handleClick = (cat) => (e) => {
   e.preventDefault();
-  setCategory('food')
+  setCategory(cat)
   dispatch(updateCategory(category))
 }
 
@@ -25,7 +25,7 @@ function handleClick(e){
         to={{
           pathname: '/category'  
         }} >
-      <button onClick={handleClick} onMouseEnter={() => console.log("HOVER")}>FOOD</button>
+      <button onClick={handleClick('fooood')} onMouseEnter={() => console.log("HOVER")}>FOOD</button>
         </Link>
         {/* FINANCE */}
         <Link
