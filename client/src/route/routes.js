@@ -36,7 +36,7 @@ const Router = () => {
         <Route exact path="/category" component={CategoryPage} />
 
 
-        <Route exact path="/articlepage" component={ArticlePage} />
+        <Route exact path="/topic" component={ArticlePage} />
 
         {/* <Route exact path="/search" component={SearchPage} /> */}
 
