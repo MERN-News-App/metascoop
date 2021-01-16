@@ -29,6 +29,7 @@ const ContentCard2 = ({ apiURL }) => {
   
   useEffect(() => {
     fetchNews()
+    // eslint-disable-next-line
   }, [])
   
   // console.log("CONTENT CARD2", apiURL, articles)
