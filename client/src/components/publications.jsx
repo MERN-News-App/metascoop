@@ -18,13 +18,13 @@ const Publications = () => {
   const mouseEnter = (arg) => () => {
     console.log("HOVER")
           setPublication(arg)
-          dispatch(updateCategory(publication))
+          dispatch(updatePublication(publication))
           console.log(publication)
   }
 
   const handleClick = (e) => {
   
-    dispatch(updateCategory(publication))
+    dispatch(updatePublication(publication))
   }
 
   return (
