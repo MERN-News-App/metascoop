@@ -11,7 +11,7 @@ const ContentCard2 = ({ apiURL }) => {
   
   
   async function fetchNews(){
-    console.log(apiURL[0], "Fetch News Called")
+    // console.log(apiURL[0], "Fetch News Called")
     let newsData;
     let call = apiURL[0]
     try{
@@ -31,7 +31,7 @@ const ContentCard2 = ({ apiURL }) => {
     fetchNews()
   }, [])
   
-  console.log("CONTENT CARD", apiURL, articles)
+  // console.log("CONTENT CARD2", apiURL, articles)
   
   return (
 

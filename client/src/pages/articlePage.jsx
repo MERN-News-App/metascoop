@@ -33,7 +33,7 @@ const apiURL = useState(URL)
 //WE WANT TO PASS THESE DOWN AS PROPS
 
     console.log("THIS ONE", URL)
-    console.log("hello")
+    // console.log("hello")
 
 
   return (
