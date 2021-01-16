@@ -15,39 +15,21 @@ const Categories = () => {
   // }, [setCategory])
 
 
-  // const handleClick = (cat) => (e) => {
-  //   setCategory(cat)
-  //   e.preventDefault();
-  //   dispatch(updateCategory(category))
-  // }
+  const mouseEnter = (arg) => () => {
+    console.log("HOVER")
+          setCategory(arg)
+          dispatch(updateCategory(category))
+          console.log(category)
+  }
 
   const handleClick = (e) => {
-    // setCategory(cat)
-    // e.preventDefault();
+  
     dispatch(updateCategory(category))
   }
 
   return (
     <div className="margin">
-      {/* FOOD */}
-      <Link
-        to={{
-          pathname: '/articlepage'
-        }} >
-        <button onClick={handleClick} onMouseEnter={() => {
-          console.log("HOVER")
-          setCategory('programming')
-          dispatch(updateCategory(category))
-          console.log(category)
-        }}>FOOD</button>
-      </Link>
-      {/* FINANCE */}
-      <Link
-        to={{
-          pathname: '/category'
-        }} >
-        <button onClick={handleClick('finance')} onMouseEnter={() => console.log("HOVER")}>FINANCE</button>
-      </Link>
+      <Link to={{pathname: '/articlepage'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('food')}>FOOD</button></Link>
 
       <button>Publication</button>
       <button>Search</button>
