@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './categories.scoped.scss'
 
 import {useDispatch} from 'react-redux'
-import {fetchCategory} from '../actions/newsObjects'
+import {updateCategory} from '../actions/newsObjects'
 
 const Categories = () => {
   const [category, setCategory] = useState('')
@@ -15,7 +15,7 @@ const Categories = () => {
 function handleClick(e){
   e.preventDefault();
   setCategory('food')
-  dispatch(fetchCategory(category))
+  dispatch(updateCategory(category))
 }
 
   return (
@@ -25,7 +25,7 @@ function handleClick(e){
         to={{
           pathname: '/category'  
         }} >
-      <button onClick={() => console.log("CLICK")} onMouseEnter={() => console.log("HOVER")}>FOOD</button>
+      <button onClick={handleClick} onMouseEnter={() => console.log("HOVER")}>FOOD</button>
         </Link>
         {/* FINANCE */}
         <Link

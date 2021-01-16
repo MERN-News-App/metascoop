@@ -5,7 +5,7 @@ const initstate = { title: "science", apiURL:`https://api.currentsapi.services/v
 // eslint-disable-next-line
 export default (newsObject = initstate, action) => {
     switch (action.type) {
-       case 'CATEGORY':
+       case 'UPDATE_CATEGORY':
            return action.payload;
     //    case 'PUBLICATION':
     //        return action.payload;
