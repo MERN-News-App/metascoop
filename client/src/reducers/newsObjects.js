@@ -1,5 +1,5 @@
 
-const def = { title: "", apiURL:""}
+const def = { title: "science", apiURL:`https://api.currentsapi.services/v1/search?category=science&apiKey=X2DqXEqyVN2kKq2QJPwiiZZ-xpRGdj7EEFCqpfDjv6CuX-fD`}
 
 
 // eslint-disable-next-line
