@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 
 
-import ContentCard2 from "../components/contentCard2.jsx";
+import ContentCard2 from "../components/contentCard.jsx";
 import MenuBar from '../components/menuBar.jsx';
 import Title from '../components/title.jsx'
 

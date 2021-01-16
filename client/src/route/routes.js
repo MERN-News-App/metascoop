@@ -3,13 +3,13 @@ import { Route, BrowserRouter, Switch } from "react-router-dom";
 
 import Home from "../pages/home";
 import CategoriesPage from "../pages/categoriesPage"
-import CategoryPage from '../pages/category/categoryPage'
 import PublicationsPage from "../pages/publicationsPage"
 import LoginPage from "../pages/loginPage"
 import SigninPage from "../pages/signinPage"
 import LatestNews from "../pages/latestPage"
 
-import categories from './categoryRoute'
+// import CategoryPage from '../pages/category/categoryPage'
+// import categories from './categoryRoute'
 
 import MenuBar from '../components/menuBar.jsx'
 import ContentCard from '../components/contentCard.jsx'
@@ -33,7 +33,7 @@ const Router = () => {
         <Route exact path="/latest-news" component={LatestNews} />
 
         <Route exact path="/categories" component={CategoriesPage} />
-        <Route exact path="/category" component={CategoryPage} />
+        {/* <Route exact path="/category" component={CategoryPage} /> */}
 
 
         <Route exact path="/topic" component={ArticlePage} />

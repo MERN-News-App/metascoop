@@ -11,7 +11,7 @@ const ContentCard = ({ apiURL }) => {
   
   
   async function fetchNews(){
-    console.log(apiURL[0], "Fetch News Called")
+    // console.log(apiURL[0], "Fetch News Called")
     let newsData;
     let call = apiURL[0]
     try{
@@ -29,9 +29,10 @@ const ContentCard = ({ apiURL }) => {
   
   useEffect(() => {
     fetchNews()
+    // eslint-disable-next-line
   }, [])
   
-  console.log("CONTENT CARD", apiURL, articles)
+  // console.log("CONTENT CARD2", apiURL, articles)
   
   return (
 

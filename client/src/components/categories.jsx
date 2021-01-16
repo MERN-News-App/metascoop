@@ -30,7 +30,7 @@ const Categories = () => {
   return (
     <div className="margin">
       <Link to={{pathname: '/topic'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('food')}>FOOD</button></Link>
-      <Link to={{pathname: '/topic'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('programming')}>FOOD</button></Link>
+      <Link to={{pathname: '/topic'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('programming')}>PROGRAMMING</button></Link>
 
       <button>Publication</button>
       <button>Search</button>
