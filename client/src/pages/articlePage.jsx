@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSelector } from 'react-redux';
 
 
 
@@ -14,6 +15,8 @@ import Title from '../components/title.jsx'
 const ArticlePage = () => {
 
 //USE SELECTOR HERE
+const newsObj = useSelector((state) => state.newsObject)
+console.log(newsObj, "YOOOOOOOOO")
 
 
 //RETURN OBJECT.title HERE
