@@ -11,7 +11,6 @@ import { updateSearch } from '../actions/newsObjects'
 
 
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: '3px 5px',
@@ -41,19 +40,6 @@ export default function SearchBar() {
 
   const [search, setSearch] = useState('')
   const dispatch = useDispatch()
-
-
-
-  const debounce = (func, delay) => {
-    let debounceTimer;
-    return function () {
-        const context = this;
-        const args = arguments;
-        clearTimeout(debounceTimer);
-        debounceTimer =
-        setTimeout(() => func.apply(context, args), delay);
-    }
-}
 
 
 
