@@ -4,37 +4,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faFolder } from '@fortawesome/free-solid-svg-icons'
 import './contentCard.scoped.scss'
 
+import {day1,day2,day3} from '../readinglist/data.js'
+
+const days = [day1, day2, day3]
 
 const ReadingList = () => {
 // const ReadingList = ({ apiURL }) => {
+
+console.log( "here dude",day3)
   
-  const [articles, setArticles] = useState([1,2,3])
-  
-  
-  // async function fetchNews(){
-  //   // console.log(apiURL[0], "Fetch News Called")
-  //   let newsData;
-  //   let call = apiURL[0]
-  //   try{
-  //     newsData = await axios.get(call)
-  //     setArticles(newsData.data.news)
-  //   }
-    
-  //   catch(error){
-  //     newsData = error
-  //   }
-  //   return newsData
-  // }
+  const [articles, setArticles] = useState(day2)
   
   
-  
-  // useEffect(() => {
-  //   fetchNews()
-  //   // eslint-disable-next-line
-  // }, [])
-  
-  // console.log("CONTENT CARD2", apiURL, articles)
-  
+
   return (
 
 
