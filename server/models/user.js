@@ -31,21 +31,21 @@ const User = new Schema({
 });
 
 
-User.plugin(require('mongoose-bcrypt'));
+// User.plugin(require('mongoose-bcrypt'));
 
-User.statics.findByUsername = function (user) {
-    return this.find({username: user});
-}
+// User.statics.findByUsername = function (user) {
+//     return this.find({username: user});
+// }
 
-User.statics.findByEmail = function (user) {
-    return this.find({email: user});
-}
+// User.statics.findByEmail = function (user) {
+//     return this.find({email: user});
+// }
 
-User.methods.isValidPassword = async function(password) {
-    const user = this;
-    const compare = await bcrypt.compare(password, user.password);
+// User.methods.isValidPassword = async function(password) {
+//     const user = this;
+//     const compare = await bcrypt.compare(password, user.password);
   
-    return compare;
-}
+//     return compare;
+// }
 
-module.exports = mongoose.model('user', User);
+module.exports = mongoose.model('User', User);

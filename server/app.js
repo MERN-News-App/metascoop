@@ -1,9 +1,14 @@
-const express = require('express');
 const cors = require('cors');
-const bodyParser = require('body-parser');
+const express = require('express');
+const expressSession = require("express-session");
+// const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const MongoStore = require('connect-mongo')(expressSession);
 const dotenv = require('dotenv').config()
+const passport = require("passport");
+const app = express()
 
+require('./middleware/passport.js')
 
 
 
@@ -11,10 +16,26 @@ const dotenv = require('dotenv').config()
 // import postRoutes from './routes/posts.js';
 
 //APP
-const app = express()
-app.use(bodyParser.json({ limit: "30mb", extended: true}))
-app.use(bodyParser.urlencoded({ limit: "30mb", extended: true}))
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+// app.use(bodyParser.json({ limit: "30mb", extended: true}))
+// app.use(bodyParser.urlencoded({ limit: "30mb", extended: true}))
+app.use(expressSession({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        expires: 600000
+    },
+    store: new MongoStore({ mongooseConnection: mongoose.connection })
+}));
 app.use(cors())
+
+
+
+
+
+
 
 //DB
 const CONNECTION_URL = 'mongodb+srv://Benjamin:Digitor123$@mernnews.hfgdh.mongodb.net/<dbname>?retryWrites=true&w=majority'
