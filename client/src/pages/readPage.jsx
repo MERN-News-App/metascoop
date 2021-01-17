@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useSelector } from 'react-redux';
 
 
 
 
 
-import ContentCard from "../components/contentCard.jsx";
+// import ContentCard from "../components/contentCard.jsx";
+import ReadingList from '../components/readingList.jsx'
 import MenuBar from '../components/menuBar.jsx';
 import Title from '../components/title.jsx'
 
@@ -26,10 +26,8 @@ const [title]= useState("Reading List")
   return (
     <div>
       <MenuBar />
-      
       <Title title={title}/>
       <ReadingList />
-      <ContentCard apiURL={ apiURL }/>
     </div>
   );
 }

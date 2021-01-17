@@ -8,30 +8,30 @@ import './contentCard.scoped.scss'
 const ReadingList = () => {
 // const ReadingList = ({ apiURL }) => {
   
-  const [articles, setArticles] = useState({})
+  const [articles, setArticles] = useState([1,2,3])
   
   
-  async function fetchNews(){
-    // console.log(apiURL[0], "Fetch News Called")
-    let newsData;
-    let call = apiURL[0]
-    try{
-      newsData = await axios.get(call)
-      setArticles(newsData.data.news)
-    }
+  // async function fetchNews(){
+  //   // console.log(apiURL[0], "Fetch News Called")
+  //   let newsData;
+  //   let call = apiURL[0]
+  //   try{
+  //     newsData = await axios.get(call)
+  //     setArticles(newsData.data.news)
+  //   }
     
-    catch(error){
-      newsData = error
-    }
-    return newsData
-  }
+  //   catch(error){
+  //     newsData = error
+  //   }
+  //   return newsData
+  // }
   
   
   
-  useEffect(() => {
-    fetchNews()
-    // eslint-disable-next-line
-  }, [])
+  // useEffect(() => {
+  //   fetchNews()
+  //   // eslint-disable-next-line
+  // }, [])
   
   // console.log("CONTENT CARD2", apiURL, articles)
   
@@ -71,4 +71,4 @@ const ReadingList = () => {
  
 }
 
-export default ContentCard
+export default ReadingList
