@@ -6,14 +6,16 @@ import './contentCard.scoped.scss'
 import Date from './date.jsx'
 
 import {day1,day2,day3} from '../readinglist/data.js'
+import {daysList} from '../readinglist/data'
 
 const days = [day1, day2, day3]
-const date = "Monday 30th August"
+const date = daysList[1].date
 
 const ReadingList = () => {
 // const ReadingList = ({ apiURL }) => {
+  console.log("this", date)
 
-console.log( "here dude",day3)
+// console.log( "here dude",day3)
   
   const [articles, setArticles] = useState(days[2])
   
@@ -21,6 +23,8 @@ console.log( "here dude",day3)
 
   return (
     <>
+  
+
     <Date date={date}/>
 
 

@@ -216,9 +216,9 @@ export const day3 = [
 
     // an ARRAY OF OBJECTS
 export const daysList = [
-    { "Monday 15th August": `${day1}`},
-    { "Tuesday 16th August": `${day2}`},
-    { "Monday 17th August": `${day3}`},
+    { date:"Monday 15th August", articles:`${day1}`},
+    { date:"Tuesday 16th August", articles:`${day2}`},
+    { date: "Monday 17th August", articles:`${day3}`},
     ]
 
 
