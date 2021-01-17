@@ -1,4 +1,4 @@
-export const day1  = [
+export const day1 = [
     {
         "id": "e408e095-1fee-4e1c-9be2-cc086d0bd4e3",
         "title": "LeBron James: Capitol Riots Show 'We Live In Two Americas'",
@@ -73,7 +73,7 @@ export const day1  = [
     }
 ]
 
-export const day2  = [
+export const day2 = [
     {
         "id": "10c12493-6137-4e02-8ca4-2716a63fa3f9",
         "title": "Woman pleads guilty to stealing $7M from Housing Authority",
@@ -213,6 +213,14 @@ export const day3 = [
         "published": "2021-01-15 19:00:00 +0000"
     }
 ]
+
+    // an ARRAY OF OBJECTS
+export const daysList = [
+    { "Monday 15th August": `${day1}`},
+    { "Tuesday 16th August": `${day2}`},
+    { "Monday 17th August": `${day3}`},
+    ]
+
 
 
 
