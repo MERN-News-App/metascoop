@@ -3,24 +3,27 @@ import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faFolder } from '@fortawesome/free-solid-svg-icons'
 import './contentCard.scoped.scss'
+import Date from './date.jsx'
 
 import {day1,day2,day3} from '../readinglist/data.js'
 
 const days = [day1, day2, day3]
+const date = "Monday 30th August"
 
 const ReadingList = () => {
 // const ReadingList = ({ apiURL }) => {
 
 console.log( "here dude",day3)
   
-  const [articles, setArticles] = useState(day2)
+  const [articles, setArticles] = useState(days[2])
   
   
 
   return (
-
-
     <>
+    <Date date={date}/>
+
+
       { Object.keys(articles).length > 0 && articles.map((article) => {
         //cannot fix waring for unique child id
         // console.log(article.id)
