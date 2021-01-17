@@ -24,8 +24,19 @@ const ReadingList = () => {
   return (
     <>
   
-
-    <Date date={date}/>
+  { Object.keys(daysList).length > 0 && daysList.map((day) => {
+    console.log("JUST HERE",day.date)
+    return(
+      <>
+    <Date date={day.date}/>
+      
+      
+      
+      
+      
+      </>
+      )
+  })}
 
 
       { Object.keys(articles).length > 0 && articles.map((article) => {
@@ -53,7 +64,6 @@ const ReadingList = () => {
           </div>
         </div>
       )
-
       })}
     </>
   )
