@@ -2,8 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Express Backend for metascoop",
-  "main": "index.js",
-  
+  "main": "app.js",
   "scripts": {
     "start": "nodemon index.js"
   },
@@ -16,7 +15,10 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.11"
+    "mongoose": "^5.11.11",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
