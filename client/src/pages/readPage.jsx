@@ -13,13 +13,13 @@ import Title from '../components/title.jsx'
 
 
 
-const ArticlePage = () => {
+const ReadPage = () => {
 
-const newsObj = useSelector((state) => state.newsObjects)
+// const newsObj = useSelector((state) => state.newsObjects)
 // console.log(newsObj.apiURL, "YOOOOOOOOO")
 
-const [title]= useState(newsObj.title)
-const apiURL = useState(newsObj.apiURL)
+const [title]= useState("Reading List")
+// const apiURL = useState(newsObj.apiURL)
 
 
 
@@ -28,10 +28,10 @@ const apiURL = useState(newsObj.apiURL)
       <MenuBar />
       
       <Title title={title}/>
-     
+      <ReadingList />
       <ContentCard apiURL={ apiURL }/>
     </div>
   );
 }
 
-export default ArticlePage
+export default ReadPage
