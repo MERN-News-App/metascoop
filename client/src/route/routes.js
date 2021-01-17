@@ -5,7 +5,7 @@ import Home from "../pages/home";
 import CategoriesPage from "../pages/categoriesPage"
 import PublicationsPage from "../pages/publicationsPage"
 import LoginPage from "../pages/loginPage"
-import SigninPage from "../pages/signinPage"
+import SignUpPage from '../pages/signUpPage'
 import LatestNews from "../pages/latestPage"
 
 // import CategoryPage from '../pages/category/categoryPage'
@@ -16,6 +16,7 @@ import ContentCard from '../components/contentCard.jsx'
 import NewsApi from '../components/apiCall.jsx'
 
 import ArticlePage from '../pages/articlePage.jsx'
+import ReadPage from '../pages/readPage.jsx'
 
 
 
@@ -26,7 +27,7 @@ const Router = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         
-        <Route exact path="/signin" component={SigninPage} />
+        <Route exact path="/signup" component={SignUpPage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/newsApi" component={NewsApi} />
 
@@ -40,6 +41,9 @@ const Router = () => {
         <Route exact path="/topic" component={ArticlePage} />
         <Route exact path="/publication" component={ArticlePage} />
         <Route exact path="/search" component={ArticlePage} />
+
+
+        <Route exact path="/readinglist" component={ReadPage} />
 
         {/* <Route exact path="/search" component={SearchPage} /> */}
 

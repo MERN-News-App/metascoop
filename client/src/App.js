@@ -5,7 +5,7 @@ import Router from "./route/routes";
 import './styles.scss'
 import  { BreakpointProvider } from 'react-socks';
 
-import { fetchCategory } from './actions/newsObjects'
+// import { fetchCategory } from './actions/newsObjects'
 
 
 
