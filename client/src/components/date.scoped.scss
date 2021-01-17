@@ -9,10 +9,14 @@
 }
 
 .innerContainer{
-    // border-style: solid;
+    border-style: solid;
     border-width: 1px;
     width: 75%;
 
     display: flex;
     border-radius: 8px;
+}
+
+.text{
+    border-bottom: deeppink;
 }

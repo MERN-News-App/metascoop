@@ -134,7 +134,7 @@ export const daysList = [
             "published": "2021-01-16 18:25:00 +0000"
         }
     ]},
-    { date: "Monday 17th August", articles:[
+    { date: "Wednesday 17th August", articles:[
         {
             "id": "e1495a4f-d749-4fa1-98be-e5c53be36fd1",
             "title": "Playtika Goes Public As Spotlight Turns To Gaming Companies",

@@ -3,36 +3,43 @@ import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faFolder } from '@fortawesome/free-solid-svg-icons'
 import './contentCard.scoped.scss'
+import './readingList.scoped.scss'
 import Date from './date.jsx'
 
-// import {day1,day2,day3} from '../readinglist/data.js'
+
 import {daysList} from '../readinglist/data'
 
 console.log("SSSSSSS", daysList[2].articles)
 
-// const days = [day1, day2, day3]
+
 const date = daysList[1]
 
 const ReadingList = () => {
-// const ReadingList = ({ apiURL }) => {
-  console.log("this", date)
 
-// console.log( "here dude",day3)
-  
-  // const [articles, setArticles] = useState(days[2])
+  console.log("this", daysList[0].articles)
+
+
   
   
 
   return (
-    <>
+    <> 
+
+   
+
+  
   
   { Object.keys(daysList).length > 0 && daysList.map((day) => {
     console.log("JUST HERE",day.date)
     return(
-      <>
+    <div className="spacer">
+   
     <Date date={day.date}/>
 
     { Object.keys(day.articles).length > 0 && day.articles.map((article) => {
+      console.log("SOMME", article)
+
+      return(
         <div className="wrapper" key={article.id.toString()}>
           <div className="outerContainer" >
             <div className="tdiv">
@@ -52,11 +59,9 @@ const ReadingList = () => {
             </div>
           </div>
         </div>
+      )
       })}
-      
-      
-      
-      </>
+      </div>
       )
   })}
 
