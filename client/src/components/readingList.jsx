@@ -5,11 +5,13 @@ import { faPlusCircle, faFolder } from '@fortawesome/free-solid-svg-icons'
 import './contentCard.scoped.scss'
 import Date from './date.jsx'
 
-import {day1,day2,day3} from '../readinglist/data.js'
+// import {day1,day2,day3} from '../readinglist/data.js'
 import {daysList} from '../readinglist/data'
 
-const days = [day1, day2, day3]
-const date = daysList[1].date
+console.log("SSSSSSS", daysList[2].articles)
+
+// const days = [day1, day2, day3]
+const date = daysList[1]
 
 const ReadingList = () => {
 // const ReadingList = ({ apiURL }) => {
@@ -17,7 +19,7 @@ const ReadingList = () => {
 
 // console.log( "here dude",day3)
   
-  const [articles, setArticles] = useState(days[2])
+  // const [articles, setArticles] = useState(days[2])
   
   
 
@@ -29,21 +31,8 @@ const ReadingList = () => {
     return(
       <>
     <Date date={day.date}/>
-      
-      
-      
-      
-      
-      </>
-      )
-  })}
 
-
-      { Object.keys(articles).length > 0 && articles.map((article) => {
-        //cannot fix waring for unique child id
-        // console.log(article.id)
-      return (
-      
+    { Object.keys(day.articles).length > 0 && day.articles.map((article) => {
         <div className="wrapper" key={article.id.toString()}>
           <div className="outerContainer" >
             <div className="tdiv">
@@ -63,8 +52,16 @@ const ReadingList = () => {
             </div>
           </div>
         </div>
-      )
       })}
+      
+      
+      
+      </>
+      )
+  })}
+
+
+
     </>
   )
  
