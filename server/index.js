@@ -1,9 +1,12 @@
-// require('dotenv').config()
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv').config()
 
-import express from 'express';
-import mongoose from 'mongoose';
-import bodyParser from 'body-parser';
-import cors from 'cors';
+
+
+
 
 // import postRoutes from './routes/posts.js';
 
