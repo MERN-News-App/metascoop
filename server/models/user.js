@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 // const Bcrypt = require('mongoose-bcrypt')
 
 
-const UserSchema = new Schema({
+const User = new Schema({
     email: {
         type: String,
         unique: true,
@@ -48,4 +48,4 @@ const UserSchema = new Schema({
 //     return compare;
 // }
 
-module.exports = mongoose.model('User', UserSchema);
+module.exports = mongoose.model('user', User);

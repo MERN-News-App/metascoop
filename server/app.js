@@ -9,7 +9,8 @@ const app = express()
 const passport = require("passport");
 
 
-
+//ROUTES
+const authRouter = require("./routes/auth_routes");
 
 
 
@@ -53,3 +54,9 @@ mongoose.set('useFindAndModify', false);
 
 const PORT = process.env.PORT || 6000;
 app.listen(PORT, () => console.log(`Server Running on port: ${PORT}`))
+
+
+
+
+
+app.use('/user', authRouter);

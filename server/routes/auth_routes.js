@@ -14,7 +14,7 @@ const {registerCreate,
   sendResetPassword} = require('../controllers/auth_controller')
 const {userValidationRules, validate, accountSettingValidationRules} = require("../middleware/validator")
 
-const User = require('../models/user_model');
+const User = require('../models/user');
 
 
 
