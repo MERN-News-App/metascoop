@@ -15,11 +15,7 @@ import Title from '../components/title.jsx'
 
 const ArticlePage = () => {
 
-const newsObj = useSelector((state) => state.newsObjects)
-// console.log(newsObj.apiURL, "YOOOOOOOOO")
 
-const [title]= useState(newsObj.title)
-const apiURL = useState(newsObj.apiURL)
 
 
 
