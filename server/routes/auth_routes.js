@@ -34,7 +34,8 @@ router.post("/login", celebrate({
         password: Joi.string().required(),
     }}), 
     passport.authenticate('local', {
-        session: false
+      successRedirect: "/",
+      failureRedirect: "/login"
 }),loginCreate);
 
 
@@ -57,32 +58,8 @@ router.get('/reset-password', resetPassword)
 //PUT route for update password from reset page
 router.put('/update-password', sendResetPassword)
 
-const upload = require("../middleware/profile_aws.js");
-const singleUpload = upload.any('image');
 
-router.post("/:username/add-profile-picture",  function (req, res) {
-    const username = req.params.username;
-    //console.log(username)
-    const filter = {username: req.params.username}
-     singleUpload(req, res, async function (err) {
-      if (err) {
-        return res.json({
-          success: false,
-          errors: {
-            title: "Image Upload Error",
-            detail: err.message,
-            error: err,
-          },
-        });
-      }
-   
-       let update =  { profile: req.files[0].location };
-       //console.log(update)
-      await User.findOneAndUpdate(filter, update, {new: true})
-        .then((user) => res.status(200).json({ success: true, user: user }) )
-        .catch((err) => res.status(400).json({ success: false, error: err }));
-    });
-  });
+
 
 
 module.exports = router

@@ -1,6 +1,20 @@
-const password = require('passport')
+const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy;
 const UserModel = require('../models/user')
+
+
+passport.serializeUser((user, done) => {
+    done(null, user._id);
+});
+
+passport.deserializeUser(async (id, done) => {
+    try {
+        const user = await UserModel.findById(id);
+        done(null, user);
+    } catch (error) {
+        done(error);
+    }
+});
 
 passport.use(new LocalStrategy({
     usernameField: 'email'
