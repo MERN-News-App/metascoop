@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import { useSelector } from 'react-redux';
+// import React, { useState } from "react";
+// import { useSelector } from 'react-redux';
+
+import React from 'react'
 
 
 
@@ -10,7 +12,8 @@ import MenuBar from '../components/menuBar.jsx';
 import Title from '../components/title.jsx'
 
 
-
+const title ="tile"
+const apiURL="htttp"
 
 
 const ArticlePage = () => {
