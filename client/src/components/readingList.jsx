@@ -16,10 +16,6 @@ const date = daysList[1]
 
 const ReadingList = () => {
 
-  const readingList = useSelector((state) => state.readingLists)
-  // console.log(newsObj.apiURL, "YOOOOOOOOO")
-  const [title]= useState(newsObj.title)
-  const apiURL = useState(newsObj.apiURL)
   console.log("this", daysList[0].articles)
 
 
