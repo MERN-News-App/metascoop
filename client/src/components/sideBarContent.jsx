@@ -7,7 +7,7 @@ const SideBarContent = () => {
   return (
     <div className="outerContainer">
       <div className="innerContainer">
-        <h1>hello there,  {name}</h1>
+        <h1 className="head">hello there,  {name}</h1>
       </div>
       <div className="line"></div>
       <div className="linkDiv">
