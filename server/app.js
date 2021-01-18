@@ -1,7 +1,6 @@
 const cors = require('cors');
 const express = require('express');
 const expressSession = require("express-session");
-// const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const MongoStore = require('connect-mongo')(expressSession);
 const dotenv = require('dotenv').config()
@@ -10,7 +9,7 @@ const passport = require("passport");
 
 
 //ROUTES
-const authRouter = require("./routes/auth_routes");
+// const authRouter = require("./routes/auth_routes");
 
 
 
@@ -19,8 +18,6 @@ const authRouter = require("./routes/auth_routes");
 //APP
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-// app.use(bodyParser.json({ limit: "30mb", extended: true}))
-// app.use(bodyParser.urlencoded({ limit: "30mb", extended: true}))
 app.use(expressSession({
     secret: process.env.SESSION_SECRET,
     resave: false,
@@ -59,4 +56,4 @@ app.listen(PORT, () => console.log(`Server Running on port: ${PORT}`))
 
 
 
-app.use('/user', authRouter);
+// app.use('/user', authRouter);
