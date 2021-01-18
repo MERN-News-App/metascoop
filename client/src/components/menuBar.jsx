@@ -17,6 +17,7 @@ import SearchBar from './searchbar.jsx'
       const exit = () => {setHover('metascoop')}
 
       const MouseClick = (open) => {onSetSidebarOpen(true)}
+      const MouseClick2 = (open) => {onSetSidebarOpen(true)}
     
 
     return (
@@ -24,7 +25,7 @@ import SearchBar from './searchbar.jsx'
         <SIDE sidebarOpen={sidebarOpen} onSetSidebarOpen={onSetSidebarOpen}/>
         <div className="outerContainer">
             <div className="innerLeft">
-                <img src="LOGOFINAL.svg" alt="Kiwi standing on oval" className="logo" />
+                <img src="LOGOFINAL.svg" alt="Kiwi standing on oval" className="logo" onMouseDown={MouseClick2}/>
                 <h1 className={hover} onMouseEnter={collor} onMouseLeave={exit} onMouseDown={MouseClick}> METASCOOP</h1>
             </div>
             <div className="innerMiddle">

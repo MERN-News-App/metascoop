@@ -114,12 +114,56 @@
     margin-top: 5px;  
 }
 
-@media only screen and (max-width: 1100px) {
-    .searchbar {
-        display: none;
-    }
-  }
-
 .box{
     max-width: 100%;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .searchbar {
+        display: none;
+    }
+
+    .outerContainer{
+        border-bottom: 5px solid red;
+        border-width: 5px;
+        // border-color: rgb(206, 29, 29);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 100%;
+        
+        font-size: 100%;
+    
+        background-color: rgb(236, 236, 236);
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+    
+        // margin-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 2px;
+    }
+    
+    
+    .innerLeft{
+        border-style:solid;
+        border-width: 2px;
+        height: 50px;
+    }
+    .logo{
+        padding-left: 10px;
+        max-width: 100px;
+        max-height: 100%;
+    }
+    .innerMiddle{
+        border-style:solid;
+        border-width: 2px;
+    }
+    
+    
+    .metascoop, .metascoopHover, .item {
+        display: none
+    }
+
+  }
