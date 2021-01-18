@@ -7,7 +7,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import { Link } from 'react-router-dom'
 
 import { useDispatch } from 'react-redux'
-import { updateSearch } from '../actions/newsObjects'
+import { updateSearch } from '../actions/newsAPI'
 
 
 

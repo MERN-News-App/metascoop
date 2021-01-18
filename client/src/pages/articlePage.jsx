@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 
 
-import ContentCard2 from "../components/contentCard.jsx";
+import ContentCard from "../components/contentCard.jsx";
 import MenuBar from '../components/menuBar.jsx';
 import Title from '../components/title.jsx'
 
@@ -29,7 +29,7 @@ const apiURL = useState(newsObj.apiURL)
       
       <Title title={title}/>
      
-      <ContentCard2 apiURL={ apiURL }/>
+      <ContentCard apiURL={ apiURL }/>
     </div>
   );
 }

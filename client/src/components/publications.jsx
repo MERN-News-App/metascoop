@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './categories.scoped.scss'
 
 import { useDispatch } from 'react-redux'
-import { updatePublication } from '../actions/newsObjects'
+import { updatePublication } from '../actions/newsAPI'
 
 const Publications = () => {
   const [publication, setPublication] = useState('')
