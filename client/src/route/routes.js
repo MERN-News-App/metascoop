@@ -16,6 +16,7 @@ import ContentCard from '../components/contentCard.jsx'
 import NewsApi from '../components/apiCall.jsx'
 
 import ArticlePage from '../pages/articlePage.jsx'
+import ReadPage from '../pages/readPage.jsx'
 
 
 
@@ -40,6 +41,9 @@ const Router = () => {
         <Route exact path="/topic" component={ArticlePage} />
         <Route exact path="/publication" component={ArticlePage} />
         <Route exact path="/search" component={ArticlePage} />
+
+
+        <Route exact path="/readinglist" component={ReadPage} />
 
         {/* <Route exact path="/search" component={SearchPage} /> */}
 

@@ -1,3 +1,32 @@
 .outerContainer{
-    width: 60vw;
+    // position: fixed;
+    width: 45vw;
+    // height: 100%;
+    // border-style: dashed;
+}
+
+.innerContainer{
+    // border-style: dashed;
+    margin-top: 5%;
+    margin-left: 7%;
+    // border-bottom: rgb(195, 11, 109);
+}
+
+.link{
+    margin-left: 7%;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.linkEnd{
+    margin-bottom: 0px;
+}
+
+.line{
+    margin-left: 7%;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: black;
+    margin-bottom: 90px;
 }

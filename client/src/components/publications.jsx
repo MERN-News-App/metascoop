@@ -31,6 +31,18 @@ const Publications = () => {
     <div className="margin">
       <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('soompi.com')}>soompi</button></Link>
       <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('washingtonpost.com')}>washington Post</button></Link>
+      <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('edition.cnn.com')}>CNN</button></Link>
+      <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('dailymail.co.uk')}>DailyMail UK</button></Link>
+      <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('bbc.com')}>BBC</button></Link>
+      <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('euronews.com')}>Euro News</button></Link>
+      <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('time.com')}>Times News</button></Link>
+      <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('sportingnews.com')}>Sporting News</button></Link>
+      <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('marketwatch.com')}>Market Watch</button></Link>
+      <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('abc.net.au')}>ABC</button></Link>
+      <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('khaleejtimes.com')}>Khaleej Times</button></Link>
+      <Link to={{pathname: '/publication'}} ><button onClick={handleClick} onMouseEnter={mouseEnter('theconversation.com')}>The Conversion</button></Link>
+
+      
 
     </div>
   )
