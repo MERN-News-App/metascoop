@@ -3,6 +3,7 @@ import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faFolder } from '@fortawesome/free-solid-svg-icons'
 import './contentCard.scoped.scss'
+// import './placeholder.jpg' 
 
 
 const ContentCard = ({ apiURL }) => {
@@ -53,7 +54,7 @@ const ContentCard = ({ apiURL }) => {
                 ))}
               </div>
             </div>
-            <img src={article.image} alt="" className="hello" />
+            {(article.image !== "None")? <img src={article.image} alt="" className="hello" /> : <img src='/placeholder.jpg' alt="" className="hello" />  }
             <div className="urlDiv">{`${article.url.substring(0, 40)} ...`} </div>
             <div className="iconDiv">
               <div className="plus"><span className="icon"><FontAwesomeIcon icon={faPlusCircle} /></span></div>
