@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './sideBarContent.scoped.scss'
 
 const name = "Ben"
@@ -11,14 +12,24 @@ const SideBarContent = () => {
       </div>
       <div className="line"></div>
       <div className="linkDiv">
-        <div className="link">Latest News</div>
-        <div className="link">Publications</div>
-        <div className="link">Categories</div>
+        <Link to={{ pathname: '/latest-news' }} style={{ textDecoration: 'none' }}>
+          <div className="link">Latest News</div>
+        </Link>
+        <Link to={{ pathname: '/publications' }} style={{ textDecoration: 'none' }}>
+          <div className="link">Publications</div>
+        </Link>
+        <Link to={{ pathname: '/categories' }} style={{ textDecoration: 'none' }}>
+          <div className="link">Categories</div>
+        </Link>
       </div>
       <div className="line"></div>
       <div className="linkDiv">
-        <div className="link">Reading List</div>
-        <div className="link">Archive</div>
+        <Link to={{ pathname: '/readinglist' }} style={{ textDecoration: 'none' }}>
+          <div className="link">Reading List</div>
+        </Link>
+        <Link to={{ pathname: '/archive' }} style={{ textDecoration: 'none' }}>
+          <div className="link">Archive</div>
+        </Link>
       </div>
       <div className="line"></div>
       <div className="linkDiv">

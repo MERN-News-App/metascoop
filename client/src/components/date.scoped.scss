@@ -20,3 +20,21 @@
 .text{
     border-bottom: deeppink;
 }
+
+@media screen and (max-width: 600px) {
+    h1{
+        display: none
+    }
+
+    .outerContainer{
+        display: block;
+    }
+    .innerContainer{
+        display: block;
+    }
+    .small{
+        padding-left: 10px;
+        font-size: 1.3rem;
+        font-weight: 650;
+    }
+}
