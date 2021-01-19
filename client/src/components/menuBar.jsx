@@ -30,15 +30,17 @@ import SearchBar from './searchbar.jsx'
             </div>
             <div className="innerMiddle">
                 <div className="searchbar">
-                 <SearchBar />   
+                 <SearchBar />
+                </div>
+                <div className="searchbar2">
+                    <input type="text" placeholder="search"/>
+                    <span>SEARCH</span>
                 </div>
             </div>
             <div className="innerRight">
                 <h1 className="item">login</h1>
                 <h1 className="item">Signup</h1>
-                <span className="icon">
-                    <FontAwesomeIcon icon={faUser} size="3x" className="icons" />
-                </span>
+            
             </div>
         </div>
     </div>

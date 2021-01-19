@@ -118,10 +118,15 @@
     max-width: 100%;
 }
 
+@media only screen and (min-width: 601px) {
+    .searchbar2 {
+      display: none;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .searchbar {
-        display: none;
+      display: none;
     }
 
     .outerContainer{
@@ -147,7 +152,7 @@
     
     
     .innerLeft{
-        border-style:solid;
+        // border-style:solid;
         border-width: 2px;
         height: 50px;
     }
@@ -157,7 +162,7 @@
         max-height: 100%;
     }
     .innerMiddle{
-        border-style:solid;
+        // border-style:solid;
         border-width: 2px;
     }
     
@@ -165,5 +170,11 @@
     .metascoop, .metascoopHover, .item {
         display: none
     }
+
+    .searchbar2 {
+        padding-top: 8px;   
+        height: 100%;
+        line-height: 2rem;
+      }
 
   }
