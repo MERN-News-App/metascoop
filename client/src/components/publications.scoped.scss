@@ -1,1 +1,81 @@
 //CSS HERE
+.outerContainer{
+    border-style: dashed;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.innerContainer{
+    display: flex;
+    justify-content: center;
+    border-style: dashed;
+    width: 50%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.margin{
+    display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex: 1;
+    border-style: dashed;
+    border-color: brown;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+    // height: 50vh;
+    margin: 5px;
+    padding: 5px;
+    border-style:dashed;
+    border-color: brown;
+    border-width: 30px;
+}
+
+.flex-right {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    width:50%;
+//   height: 50vh;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid red;
+}
+
+
+.link{
+    width: 50%;
+    padding-right: 50px;
+    border-style: dashed;
+    align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+ .link{
+     align-items: center;
+     font-size: 1rem;
+ }
+ button{
+    font-size: 1.5rem;
+ }
+}
