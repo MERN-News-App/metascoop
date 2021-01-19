@@ -77,15 +77,15 @@ John wants an application that can house a refreshing news feed for his own ente
 
 ##### Home Page
 
-![home](./docs\wireframe_screenshots\home.jpg)
+![home](./docs/wireframe_screenshots/home.jpg)
 
 ##### Main Page
 
-![main](./docs\wireframe_screenshots\main.jpg)
+![main](./docs/wireframe_screenshots/main.jpg)
 
 ##### Archive
 
-![archive](.\docs\wireframe_screenshots\archive.jpg)
+![archive](./docs/wireframe_screenshots/archive.jpg)
 
 
 
@@ -93,35 +93,35 @@ John wants an application that can house a refreshing news feed for his own ente
 
 ##### Log In
 
-![login](./docs\wireframe_screenshots\login.jpg)
+![login](./docs/wireframe_screenshots/login.jpg)
 
 ##### Sign In
 
-![signin](.\docs\wireframe_screenshots\signin.jpg)
+![signin](./docs/wireframe_screenshots/signin.jpg)
 
 ##### Profile
 
-![profile](.\docs\wireframe_screenshots\profile.jpg)
+![profile](./docs/wireframe_screenshots/profile.jpg)
 
 ##### Dropdown Menu
 
-![dropdownmenu](.\docs\wireframe_screenshots\dropdownmenu.jpg)
+![dropdownmenu](./docs/wireframe_screenshots/dropdownmenu.jpg)
 
 ##### Archive Settings
 
-![archivesetting](.\docs\wireframe_screenshots\archivesetting.jpg)
+![archivesetting](./docs/wireframe_screenshots/archivesetting.jpg)
 
 ##### Profile Settings
 
-![profilesettings](.\docs\wireframe_screenshots\profilesettings.jpg)
+![profilesettings](./docs/wireframe_screenshots/profilesettings.jpg)
 
 ##### Categories
 
-![categories](.\docs\wireframe_screenshots\categories.jpg)
+![categories](./docs/wireframe_screenshots/categories.jpg)
 
 ##### Publications
 
-![publications](.\docs\wireframe_screenshots\publications.jpg)
+![publications](./docs/wireframe_screenshots/publications.jpg)
 
 
 
