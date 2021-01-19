@@ -5,3 +5,23 @@
 .title{
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+.outerContainer{
+    margin-top: 64px;
+    margin-bottom: 0px;
+    // border-style: solid;
+}
+.title{
+    display: none;
+}
+.small{
+    padding-left: 1%;
+    // border-style: solid;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    line-height: 50px;
+}
+}
