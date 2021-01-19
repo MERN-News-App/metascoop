@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 import 'rsuite/dist/styles/rsuite-default.css';
 import './menuBar.scoped.scss'
 import '../../public/LOGOFINAL.svg'
@@ -32,9 +33,12 @@ import SearchBar from './searchbar.jsx'
                 <div className="searchbar">
                  <SearchBar />
                 </div>
+                
                 <div className="searchbar2">
                     <input type="text" placeholder="search"/>
-                    <span><button className="buttonSmall">CLCIK</button></span>
+                    <Link to={{pathname: '/search'}} >
+                    <span><button className="buttonSmall"><FontAwesomeIcon icon={faSearch} size="1x" className="icons" /></button></span>
+                    </Link>
                 </div>
             </div>
             <div className="innerRight">
@@ -48,3 +52,5 @@ import SearchBar from './searchbar.jsx'
 }
 
 export default MenuBar
+
+
