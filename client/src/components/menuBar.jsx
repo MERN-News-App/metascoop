@@ -34,7 +34,7 @@ import SearchBar from './searchbar.jsx'
                 </div>
                 <div className="searchbar2">
                     <input type="text" placeholder="search"/>
-                    <span>SEARCH</span>
+                    <span><button className="buttonSmall">CLCIK</button></span>
                 </div>
             </div>
             <div className="innerRight">
