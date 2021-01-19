@@ -129,8 +129,8 @@ John wants an application that can house a refreshing news feed for his own ente
 
 https://trello.com/b/vf59LrM7/mern-news-application
 
-![trello1](.\docs\trello_screenshots\trello1.jpg)
+![trello1](./docs/trello_screenshots/trello1.jpg)
 
 
 
-![trello2](.\docs\trello_screenshots\trello2.jpg)
+![trello2](./docs/trello_screenshots/trello2.jpg)
