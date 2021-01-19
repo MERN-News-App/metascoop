@@ -8,14 +8,23 @@ const dotenv = require('dotenv').config()
 const passport = require("passport");
 const app = express()
 
+
 require('./middleware/passport.js')
+const authRouter = require('./routes/auth_routes')
+
+app.use(cors())
+
+
+//DB
+
+mongoose.connect(process.env.DATABASE_URI || CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true  })
+.then(() => console.log("Successfully connected to Mongoose Atlas"))
+.catch((error) => console.log(error.message));
+mongoose.set('useFindAndModify', false);
 
 
 
 
-// require('./routes/posts.js');
-
-//APP
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 // app.use(bodyParser.json({ limit: "30mb", extended: true}))
@@ -29,24 +38,19 @@ app.use(expressSession({
     },
     store: new MongoStore({ mongooseConnection: mongoose.connection })
 }));
-app.use(cors())
 
 
+app.use(passport.initialize())
+app.use(passport.session())
 
 
+//ROUTES
+app.use('/auth', authRouter)
 
-
-
-//DB
-const CONNECTION_URL = 'mongodb+srv://Benjamin:Digitor123$@mernnews.hfgdh.mongodb.net/<dbname>?retryWrites=true&w=majority'
-mongoose.connect(process.env.DATABASE || CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true  })
-    .then(() => console.log("Successfully connected to Mongoose Atlas"))
-    .catch((error) => console.log(error.message));
-mongoose.set('useFindAndModify', false);
-
-// app.use('/posts', postRoutes)
 
 
 
 const PORT = process.env.PORT || 6000;
 app.listen(PORT, () => console.log(`Server Running on port: ${PORT}`)) 
+
+
