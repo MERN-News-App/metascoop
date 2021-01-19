@@ -175,6 +175,7 @@
         grid-row-end: 5;
   
         margin-left: 10px;
+        // padding-right: 40px;
 
         font-size: 0.6rem;
     }
@@ -192,4 +193,21 @@
       border-radius: 12px;
       //   background-color: blue;
     }
+    .hello{
+      border-style: dashed;
+      border-color: chocolate;
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      padding-left: 40px;
+
+      object-fit: cover;
+      width:80%;
+      height: 80%;
+
+      margin: auto;
+
+      border-radius: 0px;
+  }
   }
