@@ -57,12 +57,16 @@ const MenuBar = () => {
                     </form>
                 </div>
                 <div className="innerRight">
+                    <div className="spread">
                 <Link to={{ pathname: '/login' }}style={{ textDecoration: 'none' }}> 
-                    <h1 className="item">login</h1>
-                </Link>
+                    <h1 className="item">Login</h1>
+                </Link> 
+                </div>
+                <div className="spread">
                 <Link to={{ pathname: '/signup' }}style={{ textDecoration: 'none' }}> 
                     <h1 className="item">Signup</h1>
                 </Link>
+                </div>
                 </div>
             </div>
         </div>
