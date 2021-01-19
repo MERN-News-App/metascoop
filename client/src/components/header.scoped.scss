@@ -1,3 +1,5 @@
+
+
 .outerContainer{
     padding: 20px 5vw 0px;
 
@@ -39,4 +41,14 @@
     height: 20%;
     font-size: 2rem;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+    .outerContainer {
+      display: none;
+    }
+
+    .spacer{
+        margin-bottom: 80px;
+    }
 }
